@@ -145,7 +145,10 @@ with the Common Workflow Language}
   \country{USA}
   \postcode{16801}
 }
-\affiliation{\institution{Galaxy Project}}
+\affiliation{%
+  \institution{Galaxy Project}
+  \country{Multiple Countries}
+  }
 \email{jmchilton@gmail.com}
 
 \author{Nebojša Tijanić}
@@ -197,6 +200,16 @@ with the Common Workflow Language}
 \email{carole.goble@manchester.ac.uk}
 
 \author{The CWL Community}
+\affiliation{%
+  \institution{Software Freedom Conservancy}
+  \department{Common Workflow Language project}
+  \streetaddress{137 MONTAGUE ST STE 380}
+  \city{Brooklyn}
+  \state{NY}
+  \country{USA}
+  \postcode{11201-3548}
+}
+\email{common-workflow-language@googlegroups.com}
 
 %%
 %% By default, the full list of authors will be used in the page
@@ -362,7 +375,7 @@ We thus identify an important problem for the broad adoption of workflow thinkin
 
 In the computational workflow depicted in Figure~\ref{fig:sample_workflow}, practitioners solved their problem by adopting the \textbf{Common Workflow Language} (CWL), an open standard for describing command-line-tool based workflows like theirs. We posit in this work that CWL can help solve the main problems of sharing workflows between institutions and users, and we set out to introduce the CWL standards. CWL focuses on maintaining a separation of concerns between the description and execution of tools and workflows. CWL supports workflow automation, scalability, abstraction, provenance, portability, and reusability. Last, but not least, CWL takes a principled, community-first open-source and open-standard approach whcih enables this result.
 
-CWL is the product of an open and free standards-making community. CWL began in the bioinformatics domain, but its principles are broad. Since the ratification of the first version in 2016, the CWL standards have seen use in other fields including hydrology~\cite{noauthor_eoscpilot_nodate}, radio astronomy~\cite{noauthor_lofar_nodate}, geo-spatial analysis~\cite{simonis_ogc_2020,goncalves_ogc_2020,landry_ogc_2020}, high energy physics~\cite{bell_web-based_2017} in addition to the more traditional bioinformatics fields like genomics and cancer research~\cite{kaushik_building_2019}. The many CWL contributors shaped the standard so that it could be useful to any domain that experiences the problem of "many tools written in many programming languages by many parties".
+CWL is the product of an open and free standards-making community. CWL began in the bioinformatics domain, but its principles are broad. Since the ratification of the first version in 2016, the CWL standards have seen use in other fields including hydrology\footnote{\url{https://www.eosc-portal.eu/eoscpilot-science-demonstrator-ewatercycle-switch-fair-data-hydrology}}, radio astronomy\footnote{\url{https://www.eosc-portal.eu/lofar-and-radio-astronomy-community}}, geo-spatial analysis~\cite{simonis_ogc_2020,goncalves_ogc_2020,landry_ogc_2020}, high energy physics~\cite{bell_web-based_2017} in addition to the more traditional bioinformatics fields like genomics and cancer research~\cite{kaushik_building_2019}. The many CWL contributors shaped the standard so that it could be useful to any domain that experiences the problem of "many tools written in many programming languages by many parties".
 
 CWL could also be useful in computational domains beyond science. The separation of concerns CWL proposes enables diverse projects, and would also benefit engineering and large industrial projects. Likewise, users of software container technology like Docker that distribute analysis tools can use CWL for providing a structured workflow-independent description of how to run their tools, what data is required, and what results to expect.
 
@@ -564,14 +577,8 @@ The contributions to the CWL project by the authors of this paper are:
 \href{https://orcid.org/0000-0001-9842-9718}{Stian Soiland-Reyes} (Conceptualization, Funding Acquisition, Investigation, Project Administration, Resources, Software, Supervision, Validation, User Testing, Bug Reports, Blogposts, Business Development, Content, Documentation, Examples, Event Organizing, Packaging, Tools, Answering Questions, Reviewed Contributions, Security, Tutorials, Talks, Videos),
 \href{https://orcid.org/0000-0003-1219-2137}{Carole A. Goble} (Conceptualization, Funding Acquisition, Resources, Supervision, Audio, Business Development, Content, Examples, Event Organizing, Tools, Talks, Videos).
 
-Funding acknowledgements: \grantsponsor{EU}{European Commission}
-\grantnum[https://cordis.europa.eu/project/id/823830]{EU}{H2020-INFRAEDI-02-2018 823830} BioExcel-2 (SSR),
-\grantnum[https://cordis.europa.eu/project/id/675728]{EU}{H2020-EINFRA-2015-1 675728} BioExcel (SSR),
-\grantnum[https://cordis.europa.eu/project/id/824087]{EU}{H2020-INFRAEOSC-2018-2 824087} EOSC-Life
-(SSR)
-\grantnum[https://cordis.europa.eu/project/id/739563]{EU}{H2020-INFRADEV-2016-2 739563} EOSCPilot (MRC),
-\grantnum[https://cordis.europa.eu/project/id/730976]{EU}{H2020-INFRAIA-2017-1-two-stage 730976} IBISBA 1.0 (SSR),
-\grantnum[https://cordis.europa.eu/project/id/676559]{EU}{H2020-INFRADEV-1-2015-1 676559} ELIXIR-EXCELERATE (SSR, HM).
+Funding acknowledgements: \grantsponsor{EU}{European Commission} via  \grantnum[https://cordis.europa.eu/project/id/823830]{EU}{H2020-INFRAEDI-02-2018 823830} BioExcel-2 (SSR), \grantnum[https://cordis.europa.eu/project/id/675728]{EU}{H2020-EINFRA-2015-1 675728} BioExcel (SSR), \grantnum[https://cordis.europa.eu/project/id/824087]{EU}{H2020-INFRAEOSC-2018-2 824087} EOSC-Life (SSR), \grantnum[https://cordis.europa.eu/project/id/739563]{EU}{H2020-INFRADEV-2016-2 739563} EOSCPilot (MRC), \grantnum[https://cordis.europa.eu/project/id/730976]{EU}{H2020-INFRAIA-2017-1-two-stage 730976} IBISBA 1.0 (SSR), \grantnum[https://cordis.europa.eu/project/id/676559]{EU}{H2020-INFRADEV-1-2015-1 676559} ELIXIR-EXCELERATE (SSR, HM).
+
 \end{acks}
 
 %%
