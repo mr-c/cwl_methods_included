@@ -1,6 +1,8 @@
 This repository contains the draft of a paper explaining the Common Workflow Language standards to a general Computer Science audience.
 
-It uses version 1.75 of the official ACM template https://github.com/borisveytsman/acmart/ https://ctan.org/pkg/acmart
+You can view the rendered version of this draft at https://www.overleaf.com/read/srwjqkrwmwyj
+
+cwl-cacm.tex uses version 1.75 of the official ACM template https://ctan.org/pkg/acmart
 
 ACM Criteria for authorship https://www.acm.org/publications/policies/authorship
 
