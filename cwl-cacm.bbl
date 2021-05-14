@@ -1,0 +1,545 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{27}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Afgan, Baker, Batut, van den Beek, Bouvier,
+  Čech, Chilton, Clements, Coraor, Grüning, Guerler, Hillman-Jackson,
+  Hiltemann, Jalili, Rasche, Soranzo, Goecks, Taylor, Nekrutenko, and
+  Blankenberg}{Afgan et~al\mbox{.}}{2018}]%
+        {afgan_galaxy_2018}
+\bibfield{author}{\bibinfo{person}{Enis Afgan}, \bibinfo{person}{Dannon Baker},
+  \bibinfo{person}{Bérénice Batut}, \bibinfo{person}{Marius van den Beek},
+  \bibinfo{person}{Dave Bouvier}, \bibinfo{person}{Martin Čech},
+  \bibinfo{person}{John Chilton}, \bibinfo{person}{Dave Clements},
+  \bibinfo{person}{Nate Coraor}, \bibinfo{person}{Björn~A Grüning},
+  \bibinfo{person}{Aysam Guerler}, \bibinfo{person}{Jennifer Hillman-Jackson},
+  \bibinfo{person}{Saskia Hiltemann}, \bibinfo{person}{Vahid Jalili},
+  \bibinfo{person}{Helena Rasche}, \bibinfo{person}{Nicola Soranzo},
+  \bibinfo{person}{Jeremy Goecks}, \bibinfo{person}{James Taylor},
+  \bibinfo{person}{Anton Nekrutenko}, {and} \bibinfo{person}{Daniel
+  Blankenberg}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{The {Galaxy} platform for accessible, reproducible
+  and collaborative biomedical analyses: 2018 update}.
+\newblock \bibinfo{journal}{\emph{Nucleic Acids Research}}
+  \bibinfo{volume}{46}, \bibinfo{number}{W1} (\bibinfo{date}{July}
+  \bibinfo{year}{2018}), \bibinfo{pages}{W537--W544}.
+\newblock
+\showISSN{0305-1048}
+\urldef\tempurl%
+\url{https://doi.org/10.1093/nar/gky379}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Babuji, Woodard, Li, Katz, Clifford, Kumar,
+  Lacinski, Chard, Wozniak, Foster, Wilde, and Chard}{Babuji
+  et~al\mbox{.}}{2019}]%
+        {babuji_parsl_2019}
+\bibfield{author}{\bibinfo{person}{Yadu Babuji}, \bibinfo{person}{Anna
+  Woodard}, \bibinfo{person}{Zhuozhao Li}, \bibinfo{person}{Daniel~S. Katz},
+  \bibinfo{person}{Ben Clifford}, \bibinfo{person}{Rohan Kumar},
+  \bibinfo{person}{Lukasz Lacinski}, \bibinfo{person}{Ryan Chard},
+  \bibinfo{person}{Justin~M. Wozniak}, \bibinfo{person}{Ian Foster},
+  \bibinfo{person}{Michael Wilde}, {and} \bibinfo{person}{Kyle Chard}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Parsl: {Pervasive} {Parallel} {Programming} in
+  {Python}}. In \bibinfo{booktitle}{\emph{Proceedings of the 28th
+  {International} {Symposium} on {High}-{Performance} {Parallel} and
+  {Distributed} {Computing}}} \emph{(\bibinfo{series}{{HPDC} '19})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{25--36}.
+\newblock
+\showISBNx{978-1-4503-6670-0}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3307681.3325400}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Belhajjame, Zhao, Garijo, Gamble, Hettne,
+  Palma, Mina, Corcho, Gómez-Pérez, Bechhofer, Klyne, and Goble}{Belhajjame
+  et~al\mbox{.}}{2015}]%
+        {belhajjame_using_2015}
+\bibfield{author}{\bibinfo{person}{Khalid Belhajjame}, \bibinfo{person}{Jun
+  Zhao}, \bibinfo{person}{Daniel Garijo}, \bibinfo{person}{Matthew Gamble},
+  \bibinfo{person}{Kristina Hettne}, \bibinfo{person}{Raul Palma},
+  \bibinfo{person}{Eleni Mina}, \bibinfo{person}{Oscar Corcho},
+  \bibinfo{person}{José~Manuel Gómez-Pérez}, \bibinfo{person}{Sean
+  Bechhofer}, \bibinfo{person}{Graham Klyne}, {and} \bibinfo{person}{Carole
+  Goble}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Using a suite of ontologies for preserving
+  workflow-centric research objects}.
+\newblock \bibinfo{journal}{\emph{Journal of Web Semantics}}
+  \bibinfo{volume}{32} (\bibinfo{date}{May} \bibinfo{year}{2015}),
+  \bibinfo{pages}{16--42}.
+\newblock
+\showISSN{1570-8268}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.websem.2015.01.003}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Bell, Canali, Grancher, Lamanna, McCance,
+  Mato~Vila, Piparo, Moscicki, Pace, Brito Da~Rocha, Simko, Smith, and
+  Tejedor~Saavedra}{Bell et~al\mbox{.}}{2017}]%
+        {bell_web-based_2017}
+\bibfield{author}{\bibinfo{person}{Tim Bell}, \bibinfo{person}{Luca Canali},
+  \bibinfo{person}{Eric Grancher}, \bibinfo{person}{Massimo Lamanna},
+  \bibinfo{person}{Gavin McCance}, \bibinfo{person}{Pere Mato~Vila},
+  \bibinfo{person}{Danilo Piparo}, \bibinfo{person}{Jakub Moscicki},
+  \bibinfo{person}{Alberto Pace}, \bibinfo{person}{Ricardo Brito Da~Rocha},
+  \bibinfo{person}{Tibor Simko}, \bibinfo{person}{Tim Smith}, {and}
+  \bibinfo{person}{Enric Tejedor~Saavedra}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Web-based {Analysis} {Services} {Report}}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport} CERN-IT-Note-2018-004.
+  \bibinfo{institution}{CERN}, \bibinfo{address}{Geneva, Switzerland}.
+\newblock
+\urldef\tempurl%
+\url{http://cds.cern.ch/record/2315331/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Berthold, Cebron, Dill, Gabriel, Kötter,
+  Meinl, Ohl, Thiel, and Wiswedel}{Berthold et~al\mbox{.}}{2009}]%
+        {berthold_knime_2009}
+\bibfield{author}{\bibinfo{person}{Michael~R. Berthold},
+  \bibinfo{person}{Nicolas Cebron}, \bibinfo{person}{Fabian Dill},
+  \bibinfo{person}{Thomas~R. Gabriel}, \bibinfo{person}{Tobias Kötter},
+  \bibinfo{person}{Thorsten Meinl}, \bibinfo{person}{Peter Ohl},
+  \bibinfo{person}{Kilian Thiel}, {and} \bibinfo{person}{Bernd Wiswedel}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{{KNIME} - the {Konstanz} information miner: version
+  2.0 and beyond}.
+\newblock \bibinfo{journal}{\emph{ACM SIGKDD Explorations Newsletter}}
+  \bibinfo{volume}{11}, \bibinfo{number}{1} (\bibinfo{date}{Nov.}
+  \bibinfo{year}{2009}), \bibinfo{pages}{26--31}.
+\newblock
+\showISSN{1931-0145}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1656274.1656280}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Couvares, Kosar, Roy, Weber, and
+  Wenger}{Couvares et~al\mbox{.}}{2007}]%
+        {couvares_workflow_2007}
+\bibfield{author}{\bibinfo{person}{Peter Couvares}, \bibinfo{person}{Tevfik
+  Kosar}, \bibinfo{person}{Alain Roy}, \bibinfo{person}{Jeff Weber}, {and}
+  \bibinfo{person}{Kent Wenger}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Workflow {Management} in {Condor}}.
+\newblock In \bibinfo{booktitle}{\emph{Workflows for e-{Science}: {Scientific}
+  {Workflows} for {Grids}}}, \bibfield{editor}{\bibinfo{person}{Ian~J. Taylor},
+  \bibinfo{person}{Ewa Deelman}, \bibinfo{person}{Dennis~B. Gannon}, {and}
+  \bibinfo{person}{Matthew Shields}} (Eds.). \bibinfo{publisher}{Springer},
+  \bibinfo{address}{London}, \bibinfo{pages}{357--375}.
+\newblock
+\showISBNx{978-1-84628-757-2}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-1-84628-757-2_22}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Cuevas-Vicenttín, Dey, Köhler, Riddle, and
+  Ludäscher}{Cuevas-Vicenttín et~al\mbox{.}}{2012}]%
+        {cuevas-vicenttin_scientific_2012}
+\bibfield{author}{\bibinfo{person}{Víctor Cuevas-Vicenttín},
+  \bibinfo{person}{Saumen Dey}, \bibinfo{person}{Sven Köhler},
+  \bibinfo{person}{Sean Riddle}, {and} \bibinfo{person}{Bertram Ludäscher}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Scientific {Workflows} and {Provenance}:
+  {Introduction} and {Research} {Opportunities}}.
+\newblock \bibinfo{journal}{\emph{Datenbank-Spektrum}} \bibinfo{volume}{12},
+  \bibinfo{number}{3} (\bibinfo{date}{Nov.} \bibinfo{year}{2012}),
+  \bibinfo{pages}{193--203}.
+\newblock
+\showISSN{1610-1995}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s13222-012-0100-z}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Deelman, Vahi, Juve, Rynge, Callaghan,
+  Maechling, Mayani, Chen, Ferreira~da Silva, Livny, and Wenger}{Deelman
+  et~al\mbox{.}}{2015}]%
+        {deelman_pegasus_2015}
+\bibfield{author}{\bibinfo{person}{Ewa Deelman}, \bibinfo{person}{Karan Vahi},
+  \bibinfo{person}{Gideon Juve}, \bibinfo{person}{Mats Rynge},
+  \bibinfo{person}{Scott Callaghan}, \bibinfo{person}{Philip~J. Maechling},
+  \bibinfo{person}{Rajiv Mayani}, \bibinfo{person}{Weiwei Chen},
+  \bibinfo{person}{Rafael Ferreira~da Silva}, \bibinfo{person}{Miron Livny},
+  {and} \bibinfo{person}{Kent Wenger}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Pegasus, a workflow management system for science
+  automation}.
+\newblock \bibinfo{journal}{\emph{Future Generation Computer Systems}}
+  \bibinfo{volume}{46} (\bibinfo{date}{May} \bibinfo{year}{2015}),
+  \bibinfo{pages}{17--35}.
+\newblock
+\showISSN{0167-739X}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.future.2014.10.008}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Feitelson}{Feitelson}{2015}]%
+        {feitelson_repeatability_2015}
+\bibfield{author}{\bibinfo{person}{Dror~G. Feitelson}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{From {Repeatability} to {Reproducibility} and
+  {Corroboration}}.
+\newblock \bibinfo{journal}{\emph{ACM SIGOPS Operating Systems Review}}
+  \bibinfo{volume}{49}, \bibinfo{number}{1} (\bibinfo{date}{Jan.}
+  \bibinfo{year}{2015}), \bibinfo{pages}{3--11}.
+\newblock
+\showISSN{0163-5980}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2723872.2723875}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Georgeson, Syme, Sloggett, Chung, Dashnow,
+  Milton, Lonsdale, Powell, Seemann, and Pope}{Georgeson et~al\mbox{.}}{2019}]%
+        {georgeson_bionitio_2019}
+\bibfield{author}{\bibinfo{person}{Peter Georgeson}, \bibinfo{person}{Anna
+  Syme}, \bibinfo{person}{Clare Sloggett}, \bibinfo{person}{Jessica Chung},
+  \bibinfo{person}{Harriet Dashnow}, \bibinfo{person}{Michael Milton},
+  \bibinfo{person}{Andrew Lonsdale}, \bibinfo{person}{David Powell},
+  \bibinfo{person}{Torsten Seemann}, {and} \bibinfo{person}{Bernard Pope}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Bionitio: demonstrating and facilitating best
+  practices for bioinformatics command-line software}.
+\newblock \bibinfo{journal}{\emph{GigaScience}} \bibinfo{volume}{8},
+  \bibinfo{number}{giz109} (\bibinfo{date}{Sept.} \bibinfo{year}{2019}).
+\newblock
+\showISSN{2047-217X}
+\urldef\tempurl%
+\url{https://doi.org/10.1093/gigascience/giz109}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gonçalves}{Gonçalves}{2020}]%
+        {goncalves_ogc_2020}
+\bibfield{author}{\bibinfo{person}{Pedro Gonçalves}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{OGC} {Earth} {Observations} {Applications}
+  {Pilot}: {Terradue} {Engineering} {Report}}}.
+\newblock \bibinfo{type}{{OGC} {Public} {Engineering} {Report}} OGC 20-042.
+  \bibinfo{institution}{Open Geospatial Consortium}.
+\newblock
+\urldef\tempurl%
+\url{http://docs.opengeospatial.org/per/20-042.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Group}{Group}{2008}]%
+        {the_austin_group_posix1-2008_2008}
+\bibfield{author}{\bibinfo{person}{The~Austin Group}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{POSIX}.1-2008 ({IEEE} {Std} 1003.1™-2008
+  and {The} {Open} {Group} {Technical} {Standard} {Base} {Specifications},
+  {Issue} 7)}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Austin
+  Group}.
+\newblock
+\urldef\tempurl%
+\url{https://pubs.opengroup.org/onlinepubs/9699919799.2008edition/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gryk and Ludäscher}{Gryk and
+  Ludäscher}{2017}]%
+        {gryk_workflows_2017}
+\bibfield{author}{\bibinfo{person}{Michael~R. Gryk} {and}
+  \bibinfo{person}{Bertram Ludäscher}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Workflows and {Provenance}: {Toward} {Information}
+  {Science} {Solutions} for the {Natural} {Sciences}}.
+\newblock \bibinfo{journal}{\emph{Library trends}} \bibinfo{volume}{65},
+  \bibinfo{number}{4} (\bibinfo{year}{2017}), \bibinfo{pages}{555--562}.
+\newblock
+\showISSN{0024-2594}
+\urldef\tempurl%
+\url{https://doi.org/10.1353/lib.2017.0018}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Guarracino, Amstutz, Liener, Crusoe, Novak,
+  Garrison, Ohta, Munyoki, Welter, Wait~Zaranek, Wait~Zaranek, and
+  Prins}{Guarracino et~al\mbox{.}}{2020}]%
+        {guarracino_covid-19_2020}
+\bibfield{author}{\bibinfo{person}{Andrea Guarracino}, \bibinfo{person}{Peter
+  Amstutz}, \bibinfo{person}{Thomas Liener}, \bibinfo{person}{Michael Crusoe},
+  \bibinfo{person}{Adam Novak}, \bibinfo{person}{Erik Garrison},
+  \bibinfo{person}{Tazro Ohta}, \bibinfo{person}{Bonface Munyoki},
+  \bibinfo{person}{Danielle Welter}, \bibinfo{person}{Sarah Wait~Zaranek},
+  \bibinfo{person}{Alexander~(Sasha) Wait~Zaranek}, {and}
+  \bibinfo{person}{Pjotr Prins}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{{COVID}-19 {PubSeq}: {Public} {SARS}-{CoV}-2
+  {Sequence} {Resource}}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://bcc2020.sched.com/event/coLw/covid-19-pubseq-public-sars-cov-2-sequence-resource}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Ivie and Thain}{Ivie and Thain}{2018}]%
+        {ivie_reproducibility_2018}
+\bibfield{author}{\bibinfo{person}{Peter Ivie} {and} \bibinfo{person}{Douglas
+  Thain}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Reproducibility in {Scientific} {Computing}}.
+\newblock \bibinfo{journal}{\emph{Comput. Surveys}} \bibinfo{volume}{51},
+  \bibinfo{number}{3} (\bibinfo{date}{July} \bibinfo{year}{2018}),
+  \bibinfo{pages}{63:1--63:36}.
+\newblock
+\showISSN{0360-0300}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3186266}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Jiang, Castillo, and Ahalt}{Jiang
+  et~al\mbox{.}}{2019a}]%
+        {jiang_tr-19-01_2019}
+\bibfield{author}{\bibinfo{person}{Fan Jiang}, \bibinfo{person}{Claris
+  Castillo}, {and} \bibinfo{person}{Stan Ahalt}.}
+  \bibinfo{year}{2019}\natexlab{a}.
+\newblock \bibinfo{booktitle}{\emph{{TR}-19-01: {A} {Cloud}-{Agnostic}
+  {Framework} for {Geo}-{Distributed} {Data}-{Intensive} {Applications}}}.
+\newblock \bibinfo{type}{Technical {Report}} TR-19-01.
+  \bibinfo{institution}{RENCI, University of North Carolina at Chapel Hill}.
+  \bibinfo{pages}{10} pages.
+\newblock
+\urldef\tempurl%
+\url{https://renci.org/technical-reports/tr-19-01/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Jiang, Ferriter, and Castillo}{Jiang
+  et~al\mbox{.}}{2019b}]%
+        {jiang_pivot_2019}
+\bibfield{author}{\bibinfo{person}{Fan Jiang}, \bibinfo{person}{Kyle Ferriter},
+  {and} \bibinfo{person}{Claris Castillo}.} \bibinfo{year}{2019}\natexlab{b}.
+\newblock \bibinfo{booktitle}{\emph{{PIVOT}: {Cost}-{Aware} {Scheduling} of
+  {Data}-{Intensive} {Applications} in a {Cloud}-{Agnostic} {System}}}.
+\newblock \bibinfo{type}{Technical {Report}} TR-19-02.
+  \bibinfo{institution}{RENCI, University of North Carolina at Chapel Hill}.
+  \bibinfo{pages}{8} pages.
+\newblock
+\urldef\tempurl%
+\url{https://renci.org/technical-reports/tr-19-02/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kaushik and Davis-Dusenbery}{Kaushik and
+  Davis-Dusenbery}{2019}]%
+        {kaushik_building_2019}
+\bibfield{author}{\bibinfo{person}{Gaurav Kaushik} {and}
+  \bibinfo{person}{Brandi Davis-Dusenbery}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Building {Portable} and {Reproducible} {Cancer}
+  {Informatics} {Workflows}: {An} {RNA} {Sequencing} {Case} {Study}}.
+\newblock In \bibinfo{booktitle}{\emph{Cancer {Bioinformatics}}},
+  \bibfield{editor}{\bibinfo{person}{Alexander Krasnitz}} (Ed.).
+  \bibinfo{series}{Methods in {Molecular} {Biology}},
+  Vol.~\bibinfo{volume}{1878}. \bibinfo{publisher}{Springer},
+  \bibinfo{address}{New York, NY}, \bibinfo{pages}{39--64}.
+\newblock
+\showISBNx{978-1-4939-8868-6}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-1-4939-8868-6_2}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Khan, Soiland-Reyes, Sinnott, Lonie, Goble,
+  and Crusoe}{Khan et~al\mbox{.}}{2019}]%
+        {khan_sharing_2019}
+\bibfield{author}{\bibinfo{person}{Farah~Zaib Khan}, \bibinfo{person}{Stian
+  Soiland-Reyes}, \bibinfo{person}{Richard~O. Sinnott}, \bibinfo{person}{Andrew
+  Lonie}, \bibinfo{person}{Carole Goble}, {and} \bibinfo{person}{Michael~R.
+  Crusoe}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Sharing interoperable workflow provenance: {A}
+  review of best practices and their practical application in {CWLProv}}.
+\newblock \bibinfo{journal}{\emph{GigaScience}} \bibinfo{volume}{8},
+  \bibinfo{number}{11} (\bibinfo{date}{Nov.} \bibinfo{year}{2019}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1093/gigascience/giz095}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kunze, Littman, Madden, Scancella, and
+  Adams}{Kunze et~al\mbox{.}}{2018}]%
+        {kunze_bagit_2018}
+\bibfield{author}{\bibinfo{person}{J. Kunze}, \bibinfo{person}{J. Littman},
+  \bibinfo{person}{E. Madden}, \bibinfo{person}{J. Scancella}, {and}
+  \bibinfo{person}{C. Adams}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The {BagIt} {File} {Packaging} {Format}
+  ({V1}.0)}}.
+\newblock \bibinfo{type}{{RFC}} 8493. \bibinfo{institution}{RFC Editor}.
+\newblock
+\urldef\tempurl%
+\url{https://www.rfc-editor.org/info/rfc8493}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{ISSN: 2070-1721.}
+
+
+\bibitem[\protect\citeauthoryear{Landry}{Landry}{2020}]%
+        {landry_ogc_2020}
+\bibfield{author}{\bibinfo{person}{Tom Landry}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{OGC} {Earth} {Observation} {Applications}
+  {Pilot}: {CRIM} {Engineering} {Report}}}.
+\newblock \bibinfo{type}{{OGC} {Public} {Engineering} {Report}} OGC 20-045.
+  \bibinfo{institution}{Open Geospatial Consortium}.
+\newblock
+\urldef\tempurl%
+\url{http://docs.opengeospatial.org/per/20-045.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Missier, Belhajjame, and Cheney}{Missier
+  et~al\mbox{.}}{2013}]%
+        {missier_w3c_2013}
+\bibfield{author}{\bibinfo{person}{Paolo Missier}, \bibinfo{person}{Khalid
+  Belhajjame}, {and} \bibinfo{person}{James Cheney}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{The {W3C} {PROV} family of specifications for
+  modelling provenance metadata}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 16th {International} {Conference} on {Extending} {Database}
+  {Technology}}} \emph{(\bibinfo{series}{{EDBT} '13})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{773--776}.
+\newblock
+\showISBNx{978-1-4503-1597-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2452376.2452478}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Mitchell, Almeida, Beracochea, Boland, Burgin,
+  Cochrane, Crusoe, Kale, Potter, Richardson, Sakharova, Scheremetjew,
+  Korobeynikov, Shlemov, Kunyavskaya, Lapidus, and Finn}{Mitchell
+  et~al\mbox{.}}{2020}]%
+        {mitchell_mgnify_2020}
+\bibfield{author}{\bibinfo{person}{Alex~L Mitchell}, \bibinfo{person}{Alexandre
+  Almeida}, \bibinfo{person}{Martin Beracochea}, \bibinfo{person}{Miguel
+  Boland}, \bibinfo{person}{Josephine Burgin}, \bibinfo{person}{Guy Cochrane},
+  \bibinfo{person}{Michael~R Crusoe}, \bibinfo{person}{Varsha Kale},
+  \bibinfo{person}{Simon~C Potter}, \bibinfo{person}{Lorna~J Richardson},
+  \bibinfo{person}{Ekaterina Sakharova}, \bibinfo{person}{Maxim Scheremetjew},
+  \bibinfo{person}{Anton Korobeynikov}, \bibinfo{person}{Alex Shlemov},
+  \bibinfo{person}{Olga Kunyavskaya}, \bibinfo{person}{Alla Lapidus}, {and}
+  \bibinfo{person}{Robert~D Finn}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{MGnify}: the microbiome analysis resource in
+  2020}.
+\newblock \bibinfo{journal}{\emph{Nucleic Acids Research}}
+  \bibinfo{volume}{48}, \bibinfo{number}{D1} (\bibinfo{date}{Jan.}
+  \bibinfo{year}{2020}), \bibinfo{pages}{D570--D578}.
+\newblock
+\showISSN{0305-1048}
+\urldef\tempurl%
+\url{https://doi.org/10.1093/nar/gkz1035}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Perkel}{Perkel}{2019}]%
+        {perkel_workflow_2019}
+\bibfield{author}{\bibinfo{person}{Jeffrey~M. Perkel}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Workflow systems turn raw data into scientific
+  knowledge}.
+\newblock \bibinfo{journal}{\emph{Nature}}  \bibinfo{volume}{573}
+  (\bibinfo{date}{Sept.} \bibinfo{year}{2019}), \bibinfo{pages}{149--150}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1038/d41586-019-02619-z}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Seemann}{Seemann}{2013}]%
+        {seemann_ten_2013}
+\bibfield{author}{\bibinfo{person}{Torsten Seemann}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Ten recommendations for creating usable
+  bioinformatics command line software}.
+\newblock \bibinfo{journal}{\emph{GigaScience}} \bibinfo{volume}{2},
+  \bibinfo{number}{2047-217X-2-15} (\bibinfo{date}{Dec.} \bibinfo{year}{2013}).
+\newblock
+\showISSN{2047-217X}
+\urldef\tempurl%
+\url{https://doi.org/10.1186/2047-217X-2-15}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Simonis}{Simonis}{2020}]%
+        {simonis_ogc_2020}
+\bibfield{author}{\bibinfo{person}{Ingo Simonis}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{OGC} {Earth} {Observation} {Applications}
+  {Pilot}: {Summary} {Engineering} {Report}}}.
+\newblock \bibinfo{type}{{OGC} {Public} {Engineering} {Report}} OGC 20-073.
+  \bibinfo{institution}{Open Geospatial Consortium}.
+\newblock
+\urldef\tempurl%
+\url{https://docs.ogc.org/per/20-073.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Taylor}{Taylor}{2010}]%
+        {taylor_overview_2010}
+\bibfield{author}{\bibinfo{person}{Ronald~C. Taylor}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{An overview of the {Hadoop}/{MapReduce}/{HBase}
+  framework and its current applications in bioinformatics}.
+\newblock \bibinfo{journal}{\emph{BMC Bioinformatics}} \bibinfo{volume}{11},
+  \bibinfo{number}{12} (\bibinfo{date}{Dec.} \bibinfo{year}{2010}),
+  \bibinfo{pages}{S1}.
+\newblock
+\showISSN{1471-2105}
+\urldef\tempurl%
+\url{https://doi.org/10.1186/1471-2105-11-S12-S1}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}
