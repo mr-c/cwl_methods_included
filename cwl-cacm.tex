@@ -98,7 +98,7 @@ with the Common Workflow Language}
   \institution{VU Amsterdam}
   \streetaddress{De Boelelaan 1111}
   \city{Amsterdam}
-  \country{Netherlads}
+  \country{Netherlands}
   \postcode{1081 HV}
 }
 \affiliation{%
@@ -119,7 +119,7 @@ with the Common Workflow Language}
   \department{Department of Computer Science}
   \streetaddress{De Boelelaan 1111}
   \city{Amsterdam}
-  \country{Netherlads}
+  \country{Netherlands}
   \postcode{1081 HV}
 }
 \email{s.abeln@vu.nl}
@@ -131,7 +131,7 @@ with the Common Workflow Language}
   \department{Department of Computer Science}
   \streetaddress{De Boelelaan 1111}
   \city{Amsterdam}
-  \country{Netherlads}
+  \country{Netherlands}
   \postcode{1081 HV}
 }
 \email{a.iosup@vu.nl}
@@ -415,7 +415,7 @@ Toward computational reuse and portability of polylingual, multi-party workflows
 \item
   {CWL has a \textit{declarative syntax}, facilitating polylingual workflow tasks. By being explicit about the \textit{runtime environment} and any use of \textit{software containers}, CWL enables \textit{portability} and \textit{reuse}. (See Section~\ref{sec:features}.)}
 \item
-  {The CWL standards provide a\textit{separation of concerns} between workflow authors and workflow platforms. (More in Section~\ref{sec:open:ecosystem}.)}
+  {The CWL standards provide a \textit{separation of concerns} between workflow authors and workflow platforms. (More in Section~\ref{sec:open:ecosystem}.)}
 \item
   {The CWL standards support critical workflow concepts like automation, scalability, abstraction, provenance, portability, and reusability. (Details in Section~\ref{sec:why}).}
 \item
@@ -508,7 +508,7 @@ The \textit{Common} Workflow Language standards aim to cover the \textit{common}
 
 The \textbf{CWL Workflow Description Standard}\footnote{\url{https://www.commonwl.org/v1.2/Workflow.html}} builds upon the CWL Command Line Tool Standard: it has the same YAML- or JSON-style syntax, with explicit workflow level inputs, outputs, and documentation~(see Figure~\ref{fig:syntax}). The workflow descriptions consists of a list of \textit{steps}, comprised of CWL CommandLineTools or CWL sub-workflows, each re-exposing their tool's required \textit{inputs}. Inputs are connected from either the common \textit{workflow inputs} or from outputs of other steps. The \textit{workflow outputs} expose selected outputs from workflow steps, making explicit which intermediate step outputs will be returned from the workflow. All connections include identifiers, which CWL document authors are encouraged to name meaningfully, e.g., \texttt{reference\_genome} instead of \texttt{input7}.
 
-CWL workflows form explicit \textit{data flows}, as required for the particular computational analysis. The connectivity between steps defines the partial execution order. Parallel execution of steps is permitted and encouraged whenever multiple steps have all of their inputs satisfied, e.g., in Figure~\ref{fig:sample_workflow}, \texttt{find\_16S\_matches} and \texttt{find\_S5\_matches} are at the same data dependency level and can execute concurrently or sequentially in any order. Additionally a \textit{scatter} construct allows the repeated execution of a CWL step to \textit{iterate} or select from input arrays, or from multiples links to the same input. Starting with CWL version 1.2, workflows can also conditionally \textit{skip execution} of a (tool or workflow) step, based upon a specified intermediate input or custom boolean evaluation. Combining these features allows for a flexible \textit{branch} mechanism that allows workflow engines to calculate data dependencies before the workflow starts, and thus retains the predictability of the data flow paradigm.
+CWL workflows form explicit \textit{data flows}, as required for the particular computational analysis. The connectivity between steps defines the partial execution order. Parallel execution of steps is permitted and encouraged whenever multiple steps have all of their inputs satisfied, e.g., in Figure~\ref{fig:sample_workflow}, \texttt{find\_16S\_matches} and \texttt{find\_S5\_matches} are at the same data dependency level and can execute concurrently or sequentially in any order. Additionally, a \textit{scatter} construct allows the repeated execution of a CWL step to \textit{iterate} or select from input arrays, or from multiples links to the same input. Starting with CWL version 1.2, workflows can also conditionally \textit{skip execution} of a (tool or workflow) step, based upon a specified intermediate input or custom boolean evaluation. Combining these features allows for a flexible \textit{branch} mechanism that allows workflow engines to calculate data dependencies before the workflow starts, and thus retains the predictability of the data flow paradigm.
 
 In contrast to hard-coded approaches that rely on implicit file-paths particular for each workflow, CWL workflows are more \textit{flexible}, \textit{reusable}, and \textit{portable} (which enables scalability). The use in CWL of explicit runtime environments, combined with explicit inputs/outputs to form the data flow, enables step reordering and explicit handling of iterations. The same features enable \textit{scalable} remote execution and, more generally, flexible use of runtime environments. Moreover, in CWL, individual tool definitions from multiple workflows can be reused in any new workflow. 
 
@@ -516,7 +516,7 @@ CWL workflow descriptions are also \textit{future-proof}. Forward compatibility 
 
 \section{Open-Source, Open Standards, Open~Community} \label{sec:open}
 
-Given the numerous and diverse set of potential users, implementers, and other stakeholders, we posit that a project like CWL requires combined development of code, standards, and community. Indeed, these requirements were part of the foundational design principles for CWL~(Section~\ref{sec:open:principles}); in the long run, these have fostered free and open source software~(Sidebar~B, in Section~\ref{sec:sidebar:b}), and a vibrant and active ecosystem~(Section~\ref{sec:open:ecosystem}). 
+Given the numerous and diverse set of potential users, implementers, and other stakeholders, we posit that a project like CWL requires the combined development of code, standards, and community. Indeed, these requirements were part of the foundational design principles for CWL~(Section~\ref{sec:open:principles}); in the long run, these have fostered free and open source software~(Sidebar~B, in Section~\ref{sec:sidebar:b}), and a vibrant and active ecosystem~(Section~\ref{sec:open:ecosystem}). 
 
 
 \subsection{The CWL Principles} \label{sec:open:principles}
@@ -584,7 +584,7 @@ Some workflow users require the \textit{maintenance and risk-mitigation guarante
 
 CWL supports well the acute \textit{need to reuse} (and, correspondingly, \textit{to share}) information on workflow execution, and on authoring and provenance. The CWLProv\footnote{\url{https://w3id.org/cwl/prov/}} prototype was created to show how existing standards~\cite{belhajjame_using_2015,kunze_bagit_2018,missier_w3c_2013} can be combined to represent the provenance of a specific execution of a CWL workflow~\cite{khan_sharing_2019}. Although, to-date, CWLProv has only been implemented in the CWL reference runner, interest is high in additional implementation and further development---similarly to what other CWL developments experienced during their first years of existence.
 
-One criteria for evaluating a workflow language is the extent to which it supports a \textit{separation of concerns} between the workflow description authors and the software implementers of the language. This separation of concerns is realized in CWL by using an explicit description approach. This has enabled several optimizations in scheduling (location-based~\cite{jiang_tr-19-01_2019}, cost-based~\cite{jiang_pivot_2019}) and data-organization by researchers and other implementers of the CWL standards.
+One criterion for evaluating a workflow language is the extent to which it supports a \textit{separation of concerns} between the workflow description authors and the software implementers of the language. This separation of concerns is realized in CWL by using an explicit description approach. This has enabled several optimizations in scheduling (location-based~\cite{jiang_tr-19-01_2019}, cost-based~\cite{jiang_pivot_2019}) and data-organization by researchers and other implementers of the CWL standards.
 
 \section{Conclusion}\label{sec:conclusion}
 
