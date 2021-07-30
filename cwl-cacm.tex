@@ -232,6 +232,18 @@ with the Common Workflow Language}
 }
 \email{soiland-reyes@manchester.ac.uk}
 
+\author{\addition{Bogdan Gavrilovic}}
+\orcid{0000-0003-1550-1716}
+\affiliation{%
+  \institution{Seven Bridges}
+  \streetaddress{Schrafft’s City Center, 529 Main St, Suite 6610}
+  \city{Charlestown}
+  \state{MA}
+  \country{USA}
+  \postcode{02129}
+}
+\email{bogdan.gavrilovic@sbgenomics.com}
+
 \author{Carole Goble}
 \orcid{0000-0003-1219-2137}
 \affiliation{%
@@ -572,9 +584,9 @@ For example details about when a step should be considered ready for execution a
 \item Workflow step placement based upon data location~\cite{jiang_tr-19-01_2019}, resource needs, and/or cost of data transfer~\cite{jiang_pivot_2019}
 \item \todorone{4}The re-use of the results from previously computed steps, even from a different workflow, as long as the inputs are identical. This can be controlled by the user via the ``WorkReuse'' directive\footnote{\url{https://www.commonwl.org/v1.2/Workflow.html\#WorkReuse}}.
 \end{enumerate}
-}
 
-Real world usage at scale: routinely CWL users and vendors report that they analyze 5000 whole genome sequences (typically on the order of 100 Gigabytes each) in a single workflow execution; one customer of a commercial vendor reported a successful run of a workflow that contained an 8,000-wide step; the entire workflow had 25,000 container executions\footnote{\url{https://docs.google.com/document/d/1tZWwgBAromWOj6hz12J_QLMpvsJV-3vnCH8ttm_eDOE/edit#bookmark=id.gg2bb2h9n4pz}}.
+Real world usage at scale: routinely CWL users and vendors report that they analyze 5000 whole genome sequences (typically on the order of 100 Gigabytes each) in a single workflow execution; one customer of a commercial vendor reported a successful run of a workflow that contained an 8,000-wide step; the entire workflow had 25,000 container executions.
+}
 
 \addition{
 \subsection{When is CWL not useful?} \label{sec:limitations}
@@ -690,7 +702,7 @@ Development, Event Organizing, Talks},
 \contributor{https://orcid.org/0000-0001-9795-7981}{Niels Drost}{Funding Acquisition, Blogposts, Event Organizing, Tutorials, Talks},
 \contributor{https://orcid.org/0000-0001-8626-2148}{Robert Finn}{Data acquisition, Funding acquisition, Investigation, Resources, Supervision},
 \contributor{https://orcid.org/0000-0001-9292-1533}{Michael Franklin}{Software, Bug Reports, Documentation, Event Organizing, Maintenance, Tools, Answering Questions, Talks},
-\contributor{https://orcid.org/0000-0003-1550-1716}{Bogdan Gavrilovic}{Conceptualization, Software, Validation, Bug Reports, Blogposts, Maintenance, Tools, Answering Questions, Reviewed Contributions, User Testing},
+\deletion{\contributor{https://orcid.org/0000-0003-1550-1716}{Bogdan Gavrilovic}{Conceptualization, Software, Validation, Bug Reports, Blogposts, Maintenance, Tools, Answering Questions, Reviewed Contributions, User Testing},}
 \contributor{https://orcid.org/0000-0002-5843-4712}{Manabu Ishii}{Blogposts, Documentation, Examples, Event Organizing, Maintenance, Tools, Answering Questions, Translation, Tutorials, Talks},
 \contributor{https://orcid.org/0000-0003-4115-3313}{Sinisa Ivkovic}{Software, Validation, Bug Reports, Tools},
 \contributor{https://orcid.org/0000-0002-3468-0652}{Alexander Kanitz}{Software, Business Development, Tools, Talks},
@@ -718,6 +730,7 @@ The contributions to the CWL project by the authors of this paper are:
 \contributor{https://orcid.org/0000-0001-8316-4067}{Nebojša Tijanić}{Conceptualization, Software},
 \contributor{https://orcid.org/0000-0002-7552-1009}{Hervé Ménager}{Conceptualization, Funding Acquisition, Investigation, Methodology, Project Administration, Resources, Software, Supervision, Bug Reports, Business Development, Examples, Event Organizing, Maintenance, Tools, Tutorials, Talks},
 \contributor{https://orcid.org/0000-0001-9842-9718}{Stian Soiland-Reyes}{Conceptualization, Funding Acquisition, Investigation, Project Administration, Resources, Software, Supervision, Validation, User Testing, Writing – review and editing, Bug Reports, Blogposts, Business Development, Content, Documentation, Examples, Event Organizing, Packaging, Tools, Answering Questions, Reviewed Contributions, Security, Tutorials, Talks, Videos},
+\addition{\contributor{https://orcid.org/0000-0003-1550-1716}{Bogdan Gavrilovic}{Conceptualization, Software, Validation, Bug Reports, Blogposts, Maintenance, Tools, Answering Questions, Reviewed Contributions, User Testing},}
 \contributor{https://orcid.org/0000-0003-1219-2137}{Carole A. Goble}{Conceptualization, Funding Acquisition, Resources, Supervision, Audio, Business Development, Content, Examples, Event Organizing, Tools, Talks, Videos}.
 
 Funding acknowledgements: \grantsponsor{EU}{European Commission}{https://ec.europa.eu/programmes/horizon2020/} grants  
