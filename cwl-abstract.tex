@@ -1,12 +1,22 @@
 \begin{abstract}
-A widely used standard for portable multilingual/polyglot data analysis pipelines would enable considerable benefits to scholarly publication reuse, research/industry collaboration, regulatory cost control, and to the environment. Published research that used multiple computer languages for their analysis pipelines would include a complete and reusable description of that analysis that is runnable on a diverse set of computing environments. Researchers would be able to easier collaborate and reuse these pipelines, adding or exchanging components regardless of programming language used; collaborations with and within the industry would be easier; approval of new medical interventions that rely on such pipelines would be faster. Time will be saved and environmental impact would also be reduced, as these descriptions contain enough information for advanced optimization without user intervention.
 
-[CONTEXT] Workflows are widely used in data analysis pipelines, enabling innovation and decision-making for the modern society. In many domains the analysis components are numerous and written in multiple different computer languages by third parties. Such multilingual workflows are common or dominant in bioinformatics, image analysis, and radio astronomy.
+Workflows are widely used in data analysis, enabling innovation and decision-making for the modern society. In many domains the analysis components are numerous and written in multiple different computer languages by third parties. Such multilingual workflows are common in many industries and dominant in for example bioinformatics, image analysis, and radio astronomy.
+%
+However, in practice many competing workflow systems exist, severally limiting portability of such workflows, thereby hindering the transfer of such workflows between different systems, between different projects and different settings, leading to vendor lock-ins and limiting their generic re-usability.   
+%
+Here we present the Common Workflow Language (CWL), a set of free and open standards for describing command-line tool based workflows. The CWL standards provide a common but reduced set of abstractions that are both used in practice and implemented in many popular workflow systems. The CWL language is declarative, which allows expressing computational workflows constructed from diverse software tools, executed each through their command-line interface. Being explicit about the runtime environment and any use of software containers enables portability and reuse. The CWL project is not specific to a particular analysis domain, community-driven, and produces consensus-built standards.  
+%
+Workflows written according to the CWL standards are a reusable description of that analysis that are runnable on a diverse set of computing environments. These descriptions contain enough information for advanced optimization without user intervention.
+%
+The CWL standards support multilingual wokflows, enabling portability and reuse of such workflows, easing for example scholarly publication, fulfilling regulatory requirements, collaboration in/between academic research and industry, while reducing implementation costs. CWL has been taken up by a wide variety of domains, and industries and support has been implemented in many major workflow systems.
+
+%% [Check if more conclusions need to be added from (1-5) in the conclusion section]
+
  
-[PROBLEM] However, lacking a standard for reusable and portable multilingual workflows, then reusing published multilingual workflows, collaborating on open problems, and optimizing their execution would be severely hampered. Moreover, only a standard for multilingual data analysis pipelines that was widely used would enable considerable benefits to research-industry collaboration, regulatory cost control, and to preserving the environment.
 
-Prior to the start of the CWL project, there was no standard for describing multilingual analysis pipelines in a portable and reusable manner.
-Even today / currently, although there exist hundreds of single-vendor and other single-source systems that run workflows, none is a general, community-driven, and consensus-built standard.
+%However %, lacking a standard for reusable and portable multilingual workflows, then 
+%reusing published multilingual workflows, collaborating on open problems, and optimizing their execution are severely hampered . Moreover, only a standard for multilingual data analysis pipelines that is widely used enables considerable benefits to research-industry collaboration, regulatory cost control, and to preserving the environment.
+
 
 %% Explain the solution: CWL
 
