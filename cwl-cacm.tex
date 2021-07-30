@@ -262,20 +262,7 @@ with the Common Workflow Language}
 %% of authors' names for this purpose.
 \renewcommand{\shortauthors}{Crusoe et al.}
 
-%%
-%% The abstract is a short summary of the work to be presented in the
-%% article.
-% \begin{abstract}
-% A widely used standard for portable multilingual/polyglot data analysis pipelines would enable considerable benefits to scholarly publication reuse, research/industry collaboration, regulatory cost control, and to the environment. Published research that used multiple computer languages for their analysis pipelines would include a complete and reusable description of that analysis that is runnable on a diverse set of computing environments. Researchers would be able to easier collaborate and reuse these pipelines, adding or exchanging components regardless of programming language used; collaborations with and within the industry would be easier; approval of new medical interventions that rely on such pipelines would be faster. Time will be saved and environmental impact would also be reduced, as these descriptions contain enough information for advanced optimization without user intervention.
 
-% [CONTEXT] Workflows are widely used in data analysis pipelines, enabling innovation and decision-making for the modern society. In many domains the analysis components are numerous and written in multiple different computer languages by third parties. Such multilingual workflows are common or dominant in bioinformatics, image analysis, and radio astronomy.
- 
-% [PROBLEM] However, lacking a standard for reusable and portable multilingual workflows, then reusing published multilingual workflows, collaborating on open problems, and optimizing their execution would be severely hampered. Moreover, only a standard for multilingual data analysis pipelines that was widely used would enable considerable benefits to research-industry collaboration, regulatory cost control, and to preserving the environment.
-
-% Prior to the start of the CWL project, there was no standard for describing multilingual analysis pipelines in a portable and reusable manner.
-% Even today / currently, although there exist hundreds of single-vendor and other single-source systems that run workflows, none is a general, community-driven, and consensus-built standard.
-%   %% max 400 words; ~277 now
-% \end{abstract}
 \input{cwl-abstract}
 
 %%
@@ -412,6 +399,49 @@ with the Common Workflow Language}
 
 \textit{Workflow thinking} \todortwo{4}\addition{is a form of ``conceptualizing processes as recipes and protocols, structured as [work- or] dataflow graphs with computational steps, and subsequently developing tools and approaches for formalizing, analyzing and communicating these process descriptions''}~\cite{gryk_workflows_2017}. \modification{It introduces an abstraction, the workflow, which} helps decouple expertise in a specific domain, for example of \addition{specific} science or engineering \addition{fields}, from expertise in computing. Derived from workflow thinking, a \textit{computational workflow} describes a process for computing where different parts of the process (the tasks) are inter-dependent, e.g., a task can start processing after its predecessors have (partially) completed and where data flows between tasks. %%\todortwo{4}\addition{Simplifying taxonomy, workflows focusing on data-driven parallelizable computation (\textit{dataflows}) are special cases of computational workflows.}
 
+
+
+Currently, many competing systems \todortwo{19}\modification{exist that enable simple workflow execution (\textit{workflow runners}) or offer a comprehensive management of workflows and data (\textit{workflow management systems})}, each with their own syntax or method for describing workflows and infrastructure requirements. This limits computational reuse and portability. In particular, although the data-flows are becoming increasingly more complex, most workflow abstractions do not enable explicit specifications of data-flows, increasing significantly the costs to reuse and port the workflow by third-parties.
+%that their non-explicit specification in most workflow abstractions further increases the costs to reuse and port the workflow by third-parties.
+
+We thus identify an important problem for the broad adoption of workflow thinking in practice: although communities want polylingual and multi-party workflows, \textbf{adopting and managing different workflow systems is costly and difficult}. In this work, we propose to tame this complexity through a common abstraction that covers the majority of features used in practice, and is (or can be) implemented in many workflow systems.
+
+
+%% Sanne: CWL needs general intro here
+
+
+In the computational workflow depicted in Figure~\ref{fig:sample_workflow}, practitioners solved the problem by adopting \modification{the CWL standards.} We posit in this work that the \modification{CWL standards} \todortwo{5}\addition{provide the common abstraction that} can help solve the main problems of sharing workflows between institutions and users. \todortwo{6}\addition{CWL achieves this by providing a declarative language that allows expressing computational workflows constructed from diverse software tools, executed each through their command-line interface, with the inputs of each tool clearly specified and possibly resulting from the execution of other tools. As the large and diverse community using CWL indicates, many useful workflows can be expressed and executed this way.} We also set out to introduce the CWL standards, with a tri-fold focus: (1)~\modification{the CWL standards} focuses on maintaining a separation of concerns between the description and execution of tools and workflows\addition{, proposing a language that includes only operations commonly used across multiple communities of practice}; (2)~\modification{the CWL standards} supports workflow automation, scalability, abstraction, provenance, portability, and reusability; and (3)~the CWL project takes a principled, community-first open-source and open-standard approach which enables this result.
+
+\modification{The CWL standards are} the product of an open and free standards-making community. The many \modification{contributors to the CWL project} shaped the standard so that it could be useful to any domain that experiences the problem of ``many tools written in many programming languages by many parties''. \modification{The CWL project} began in the bioinformatics domain. Since the ratification of the first version in 2016, the CWL standards have been used in other fields including hydrology\footnote{\url{https://www.eosc-portal.eu/eoscpilot-science-demonstrator-ewatercycle-switch-fair-data-hydrology}}, radio astronomy\footnote{\url{https://www.eosc-portal.eu/lofar-and-radio-astronomy-community}}, geo-spatial analysis~\cite{simonis_ogc_2020,goncalves_ogc_2020,landry_ogc_2020}, high energy physics~\cite{bell_web-based_2017}, in addition to fast-growing bioinformatics fields like \todortwo{3}\addition{(meta-)}genomics~\cite{mitchell_mgnify_2020} and cancer research~\modification{\cite{lau_cancer_2017}}. \todortwo{2}\todorthree{2}\addition{The CWL standards are featured in US FDA sponsored and adopted IEEE 2791-2020 standard~\cite{noauthor_ieee_2020} and the Netherlands' National Plan for Open Science~\cite{van_wezenbeek_nationaal_2017}. A list of free and open-source implementations of the CWL standards are listed in table \ref{tab:runners}. Additionally there are multiple commercially supported systems that support \modification{the CWL standards} for executing workflows and they are available from vendors such as Curii (Arvados)\footnote{\url{https://www.curii.com/}}, DNAnexus\footnote{\url{https://www.dnanexus.com/}}, IBM (IBM® Spectrum LSF)\footnote{\url{https://github.com/IBMSpectrumComputing/cwlexec}}, Illumina (Illumina Connected Analytics)\footnote{\url{https://www.illumina.com/}}, and Seven Bridges\footnote{\url{https://www.sevenbridges.com/}}}. The flexibility of \modification{the CWL standards} enabled rapid collaboration on and prototyping of a COVID-19 public database and analysis resource~\cite{guarracino_covid-19_2020}.
+
+\modification{The CWL standards} could also be useful in computational domains beyond science. The separation of concerns proposed by \modification{the CWL standards} enables diverse projects, and would also benefit engineering and large industrial projects. Likewise, users of software container technology like Docker that distribute analysis tools can use \modification{the CWL standards} for providing a structured workflow-independent description of how to run their tools, what data is required, and what results to expect.
+
+\textbf{Key Insights [in CACM box]}
+
+Toward computational reuse and portability of polylingual, multi-party workflows, \modification{the CWL project} makes the following contributions:
+
+\begin{enumerate}
+\item
+  {CWL is a set of standards for describing and sharing computational workflows.}
+\item
+  {\modification{The CWL standards are} used daily in many science and engineering domains, including by multi-stakeholder teams}
+\item
+  {\modification{The CWL standards use} a \textit{declarative syntax}, facilitating polylingual workflow tasks. By being explicit about the \textit{runtime environment} and any use of \textit{software containers}, \modification{the CWL standards} enables \textit{portability} and \textit{reuse}. (See Section~\ref{sec:features}.)}
+\item
+  {The CWL standards provide a \textit{separation of concerns} between workflow authors and workflow platforms. (More in Section~\ref{sec:open:ecosystem}.)}
+\item
+  {The CWL standards support critical workflow concepts like automation, scalability, abstraction, provenance, portability, and reusability. (Details in Section~\ref{sec:why}).}
+\item
+  {\modification{The CWL standards are} developed around core principles of community and shared decision making, re-use, and zero cost for participants. (Section~\ref{sec:open} details the open standards.)}
+\item
+  {\modification{The CWL standards are} provided as freely available open standards, supported by a diverse community in collaboration with industry, and is a Free/Open Source Software ecosystem~(see Sidebar~B, Section~\ref{sec:sidebar:b}).}
+\end{enumerate}
+
+\section{Background on Workflows and Standards for Workflows}\label{sec:bg}\label{sec:why}
+
+Workflows, and standards-based descriptions thereof, hold the potential to solve key problems in many domains of science and engineering. This section explains why.
+
+\subsection{Why Workflows?}\label{sec:bg:workflows}
 In many domains, workflows include diverse analysis components, written in multiple (different) computer languages, by both end-users and third-parties. Such \emph{polylingual} and multi-party workflows are already common or dominant in data-intensive fields like bioinformatics, image analysis, and radio astronomy; we envision they could bring important benefits to many other domains.
 
 To thread data through analysis tools, domain experts such as bioinformaticians use specialized command-line interfaces~\cite{seemann_ten_2013,georgeson_bionitio_2019} and other domains use their own customized frameworks~\cite{babuji_parsl_2019,berthold_knime_2009}. Workflow engines also help with efficient management of the resources used to run scientific workloads~\cite{deelman_pegasus_2015,couvares_workflow_2007}.
@@ -430,63 +460,15 @@ The workflow approach helps compose an entire application of these command-line 
  
 In practice, many research and engineering groups use workflows of the kind described in Figure~\ref{fig:sample_workflow}. However, as highlighted in a recently published ``Technology Toolbox'' article~\cite{perkel_workflow_2019} published in the journal Nature, these groups typically lack the ability to share and collaborate across institutions and infrastructures without costly manual translation of their workflows.
 
-Currently, many competing systems \todortwo{19}\modification{exist that enable simple workflow execution (\textit{workflow runners}) or offer a comprehensive management of workflows and data (\textit{workflow management systems})}, each with their own syntax or method for describing workflows and infrastructure requirements. This limits computational reuse and portability. In particular, although the data-flows are becoming increasingly more complex, most workflow abstractions do not enable explicit specifications of data-flows, increasing significantly the costs to reuse and port the workflow by third-parties.
-%that their non-explicit specification in most workflow abstractions further increases the costs to reuse and port the workflow by third-parties.
-
-We thus identify an important problem for the broad adoption of workflow thinking in practice: although communities want polylingual and multi-party workflows, \textbf{adopting and managing different workflow systems is costly and difficult}. In this work, we propose to tame this complexity through a common abstraction that covers the majority of features used in practice, and is (or can be) implemented in many workflow systems.
-
-
-%% Sanne: CWL needs general intro here
-
-
-In the computational workflow depicted in Figure~\ref{fig:sample_workflow}, practitioners solved the problem by adopting \modification{the CWL standards.} We posit in this work that the \modification{CWL standards} \todortwo{5}\addition{provide the common abstraction that} can help solve the main problems of sharing workflows between institutions and users. \todortwo{6}\addition{CWL achieves this by providing a declarative language that allows expressing computational workflows constructed from diverse software tools, executed each through their command-line interface, with the inputs of each tool clearly specified and possibly resulting from the execution of other tools. As the large and diverse community using CWL indicates, many useful workflows can be expressed and executed this way.} We also set out to introduce the CWL standards, with a tri-fold focus: (1)~\modification{the CWL standards} focuses on maintaining a separation of concerns between the description and execution of tools and workflows\addition{, proposing a language that includes only operations commonly used across multiple communities of practice}; (2)~\modification{the CWL standards} supports workflow automation, scalability, abstraction, provenance, portability, and reusability; and (3)~the CWL project takes a principled, community-first open-source and open-standard approach which enables this result.
-
-\modification{The CWL standards are} the product of an open and free standards-making community. The many \modification{contributors to the CWL project} shaped the standard so that it could be useful to any domain that experiences the problem of ``many tools written in many programming languages by many parties''. \modification{The CWL project} began in the bioinformatics domain. Since the ratification of the first version in 2016, the CWL standards have been used in other fields including hydrology\footnote{\url{https://www.eosc-portal.eu/eoscpilot-science-demonstrator-ewatercycle-switch-fair-data-hydrology}}, radio astronomy\footnote{\url{https://www.eosc-portal.eu/lofar-and-radio-astronomy-community}}, geo-spatial analysis~\cite{simonis_ogc_2020,goncalves_ogc_2020,landry_ogc_2020}, high energy physics~\cite{bell_web-based_2017}, in addition to fast-growing bioinformatics fields like \todortwo{3}\addition{(meta-)}genomics~\cite{mitchell_mgnify_2020} and cancer research~\modification{\cite{lau_cancer_2017}}. 
-The flexibility of \modification{the CWL standards} enabled rapid collaboration on and prototyping of a COVID-19 public database and analysis resource~\cite{guarracino_covid-19_2020}.
-
-\modification{The CWL standards} could also be useful in computational domains beyond science. The separation of concerns proposed by \modification{the CWL standards} enables diverse projects, and would also benefit engineering and large industrial projects. Likewise, users of software container technology like Docker that distribute analysis tools can use \modification{the CWL standards} for providing a structured workflow-independent description of how to run their tools, what data is required, and what results to expect.
-
-\textbf{Key Insights [in CACM box]}
-
-Toward computational reuse and portability of polylingual, multi-party workflows, \modification{the CWL project} makes the following contributions:
-
-\begin{enumerate}
-\item
-  {CWL is a set of standards for describing and sharing computational workflows.}
-\item
-  {\modification{The CWL standards are} used daily in many science and engineering domains, including by multi-stakeholder teams\addition{; they feature in US FDA sponsored and adopted IEEE 2791-2020 standard~\cite{noauthor_ieee_2020} and the Netherlands' National Plan for Open Science~\cite{van_wezenbeek_nationaal_2017}.}}
-\item
-  {\modification{The CWL standards use} a \textit{declarative syntax}, facilitating polylingual workflow tasks. By being explicit about the \textit{runtime environment} and any use of \textit{software containers}, \modification{the CWL standards} enables \textit{portability} and \textit{reuse}. (See Section~\ref{sec:features}.)}
-\item
-  {The CWL standards provide a \textit{separation of concerns} between workflow authors and workflow platforms. (More in Section~\ref{sec:open:ecosystem}.)}
-\item
-  {The CWL standards support critical workflow concepts like automation, scalability, abstraction, provenance, portability, and reusability. (Details in Section~\ref{sec:why}).}
-\item
-  {\modification{The CWL standards are} developed around core principles of community and shared decision making, re-use, and zero cost for participants. (Section~\ref{sec:open} details the open standards.)}
-\item
-  {\modification{The CWL standards are} provided as freely available open standards, supported by a diverse community in collaboration with industry, and is a Free/Open Source Software ecosystem~(see Sidebar~B, Section~\ref{sec:sidebar:b}).}
-\end{enumerate}
-
-\section{Background on Workflows and Standards for Workflows}\label{sec:bg}\label{sec:why}
-
-Workflows, and standards-based descriptions thereof, hold the potential to solve key problems in many domains of science and engineering. This section explains why.
-
-\subsection{Why Workflows?}\label{sec:bg:workflows}
-
 % CONTEXT
 Using workflow techniques, especially with digital analysis processes, has become quite popular and does not look to be slowing down: one \todortwo{19}{\modification{workflow management system}} recently celebrated its 10,000th citation\footnote{\url{https://galaxyproject.org/blog/2020-08-10k-pubs/}}; and over 29\modification{8} computational \addition{data analysis} workflow systems are known\footnote{\url{https://s.apache.org/existing-workflow-systems}}. Why are workflows needed?
 
 % PROBLEM
 Workflows address two key problems. First, a process, digital or otherwise, may grow to such complexity that the authors and users of that process have difficulties in understanding its structure, scaling the process, managing the running of the process, and keeping track of what happened in previous enactments of the process. Process dependencies may be undocumented, obfuscated, or otherwise effectively invisible; even an extensively documented process may be difficult to understand by outsiders or newcomers if a common framework or vocabulary is lacking. The need to run the process more frequently or with larger inputs is unlikely to be achieved  by the initial entity (i.e., either script or person) running the process. What seemed once a reasonable manual step (\textit{run this command here and then paste the result there; then call this person for permission}) will, under the pressure of porting and reusing, become a bottleneck. Informal logs (if any) will quickly become unsuitable for answering an organization's need to understand \textit{what} happened, \textit{when}, by \textit{whom}, and to \textit{which} data.
 
-% PROBLEM
-A second significant problem is that incomplete method descriptions are common when computational analysis is reported in academic research~\cite{ivie_reproducibility_2018}. Reproduction, re-use, and replication~\cite{feitelson_repeatability_2015} of these digital methods requires a complete description of what computer applications were used, how exactly they were used, and how they were connected to each other. For precision and interoperability, this description should also be in an appropriate standardized machine-readable format.
 
 % SOLUTION
 Workflow techniques aim to solve these problems by providing the Abstraction, Scaling, Automation, and Provenance (\textit{A.S.A.P.}) features~\cite{cuevas-vicenttin_scientific_2012}.  Workflow constructs enable a clear abstraction about the \textit{components}, the \textit{relationships} between components, and the \textit{inputs} and \textit{outputs} of the components turning them into well-labeled tools with documented expectations. This abstraction enables \textit{scaling} (execution can be parallelized and distributed), \textit{automation} (the abstraction can be used by a workflow engine to track, plan, and manage execution of tasks), and \textit{provenance} tracking (descriptions of tasks, executors, inputs, outputs; with timestamps, identifiers \todortwo{19}\addition{(\textit{unique names})}, and other logs, can be stored in relation to each other to later answer structured queries).
-
-% SOLUTION
-Sharing \textit{workflow descriptions based on standards} addresses the second problem: the availability of the workflow description provides needed information when sharing; and the quality of the description provided by a structured, standards-based approach is much higher than the current approach of verbal descriptions in scientific reports. Moreover, the operational parts of the description can be provided automated by the workflow management system, rather than by domain experts.
 
 \subsection{Why Workflow Standards?}\label{sec:bg:standard}
 
@@ -496,9 +478,18 @@ Although workflows are very popular, currently every workflow system is incompat
 % PROBLEM
 The success of workflows is now their biggest drawback: users are locked into a particular vendor, project, and often a particular hardware setup. This hampers sharing and re-use. Even non-academics suffer of this situation, as the lack of standards (or the lack of their adoption) hinders effective collaboration on computational methods within and between companies. Likewise, this \textit{unportability} affects public-private partnerships and the potential for technology transfer from public researchers.
 
+% PROBLEM
+A second significant problem is that incomplete method descriptions are common when computational analysis is reported in academic research~\cite{ivie_reproducibility_2018}. Reproduction, re-use, and replication~\cite{feitelson_repeatability_2015} of these digital methods requires a complete description of what computer applications were used, how exactly they were used, and how they were connected to each other. For precision and interoperability, this description should also be in an appropriate standardized machine-readable format.
+
 % SOLUTION
 A standard for sharing and reusing workflows can provide a solution to describing portable, re-usable workflows while also being workflow-engine and vendor-neutral.
 
+% SOLUTION
+Sharing \textit{workflow descriptions based on standards} addresses the second problem: the availability of the workflow description provides needed information when sharing; and the quality of the description provided by a structured, standards-based approach is much higher than the current approach of verbal descriptions in scientific reports. Moreover, the operational parts of the description can be provided automated by the workflow management system, rather than by domain experts.
+
+%% TODO: say the below nicely
+
+%% However, we point out that many experts in workflows and workflow engines do not yet appreciate the importance of standards, in contrast to the knowledge representation field, where data standards are commonly adopted and have become expected for funded projects.
 
 \subsection{Sidebar A: Monolingual and Polylingual workflow systems} \label{sec:sidebar:a}
 
@@ -530,13 +521,13 @@ Essentially all programming languages support the creation of \textbf{POSIX CLIs
 \todorthree{6}\modification{The \textit{Common} Workflow Language standards aim to cover the \textit{common} needs of users and the \textit{common}ly implemented features of workflow runners or platforms. The remainder of this section presents an overview of the CWL features, how they translate to executing workflows in CWL format, and where the CWL standards are not helpful.}
 
 
-\modification{The CWL standards} supports polylingual and multi-party workflows, for which it enables computational reuse and portability (see also the CACM Box for main features). To do so, each release of \modification{the CWL standards} has two\todortwo{10}\footnote{The third component, \textit{Schema Salad}, \addition{is only of interest to those who want to parse the syntax of the} schema language that is used to define the syntax of CWL itself.} main components: (1) a standard for describing \textit{command line} tools; and (2) a standard for describing \textit{workflows} that compose such tool descriptions. The goal of the \textbf{CWL Command Line Tool Description Standard}\footnote{\url{https://www.commonwl.org/v1.2/CommandLineTool.html}} is to describe how a particular command line tool works: what are the \textit{inputs} and \textit{parameters} and their types; how to add the correct flags and switches to the \textit{command line} invocation; and where to find the \textit{output files}. As shown in Figure~\ref{fig:syntax}B, item 3, these tool descriptions can contain \todortwo{11}\modification{well-defined} \textit{hints} such as which software container to use or how much compute resources are required (memory, number of CPU cores, disk space, and/or the maximum time or deadline to complete the step or entire workflow.)
+\modification{The CWL standards} supports polylingual and multi-party workflows, for which it enables computational reuse and portability (see also the CACM Box for main features). To do so, each release of \modification{the CWL standards} has two\todortwo{10}\footnote{The third component, \textit{Schema Salad}, \addition{is only of interest to those who want to parse the syntax of the} schema language that is used to define the syntax of CWL itself.} main components: (1) a standard for describing \textit{command line} tools; and (2) a standard for describing \textit{workflows} that compose such tool descriptions. The goal of the \textbf{CWL Command Line Tool Description Standard}\footnote{\url{https://www.commonwl.org/v1.2/CommandLineTool.html}} is to describe how a particular command line tool works: what are the \textit{inputs} and \textit{parameters} and their types; how to add the correct flags and switches to the \textit{command line} invocation; and where to find the \textit{output files}. 
 
 \modification{The CWL standards} define an \textit{explicit language}, both in syntax, and in its data and execution model. The textual syntax is derived from YAML\footnote{JSON is an acceptable subset of YAML, and common when converting from another format to CWL syntax.}. The syntax does not restrict the amount of detail; for example, Figure~\ref{fig:syntax}A depicts a simple example with sparse detail, and Figure~\ref{fig:syntax}B depicts the same example but with the execution augmented with further details. Each \textit{input} to a tool has a name and a type (e.g., File, see label 1 in the figure). %; likewise for the expected outputs. 
 Authors of tool descriptions are encouraged to include \textit{documentation} and \textit{labels} for all components (i.e., as in Figure~\ref{fig:syntax}B), to enable the automatic generation of helpful visual depictions and even Graphical User Interfaces % (GUIs) 
-for any given CWL description. \textit{Metadata} about the tool description authors themselves encourages attribution of their efforts.
+for any given CWL description. \textit{Metadata} about the tool description authors themselves encourages attribution of their efforts. As shown in Figure~\ref{fig:syntax}B, item 3, these tool descriptions can contain \todortwo{11}\modification{well-defined} \textit{hints} such as which software container to use or how much compute resources are required (memory, number of CPU cores, disk space, and/or the maximum time or deadline to complete the step or entire workflow.)
 
-\textit{The CWL execution model is explicit}: Each tool's runtime environment is explicit and any required elements must be specifed by the author of the \todortwo{16}CWL tool-description\footnote{\addition{Details on how the CWL Command Line Tool standard specifies that tool executors should setup and control the runtime environment, available  at} \url{https://www.commonwl.org/v1.2/CommandLineTool.html\#Runtime_environment}\addition{, which also specifies which directories tools are allowed to write to.}}. Each tool invocation uses a separate working directory, populated according to the CWL tool description, e.g., with the input files explicitly specified by the workflow author. \todortwo{17}\addition{Some applications expect particular filenames, directory layouts, and environment variables, and there are additional constructs in the CWL Command Line Tool standard to satisfy their needs.}
+\textit{The CWL execution model is explicit}: Each tool's runtime environment is explicit and any required elements must be specified by the author \todortwo{11}\addition{(in contrast to hints, which are optional)} of the \todortwo{16}CWL tool-description\footnote{\addition{Details on how the CWL Command Line Tool standard specifies that tool executors should setup and control the runtime environment, available  at} \url{https://www.commonwl.org/v1.2/CommandLineTool.html\#Runtime_environment}\addition{, which also specifies which directories tools are allowed to write to.}}. Each tool invocation uses a separate working directory, populated according to the CWL tool description, e.g., with the input files explicitly specified by the workflow author. \todortwo{17}\addition{Some applications expect particular filenames, directory layouts, and environment variables, and there are additional constructs in the CWL Command Line Tool standard to satisfy their needs.}
 
 \begin{figure*}
   \centering
@@ -569,7 +560,7 @@ CWL workflow descriptions are also \textit{future-proof}. Forward compatibility 
 
 \addition{
 \subsection{Execution of workflows in CWL format} \label{sec:execution}
-\todorone{1}\todorone{3}CWL is a set of standards, not a particular software product to install, purchase, or rent. Workflow/tool runners that claim compliance with the CWL standards are allowed significant flexibility in how and where they execute a user's CWL documents as long as they fulfill the requirements written in those documents. For example, they are allowed (and encouraged) to \todorone{6}distribute execution of a workflow across all available computers that can fulfill the resource requirements specified by the user. \todorone{5}Aspects of execution not defined by the CWL standards include (web) APIs for workflow execution and real-time monitoring.
+\todorone{1}\todorone{3}CWL is a set of standards, not a particular software product to install, purchase, or rent. The CWL standards need to be implemented to be useful; a list of some implementations of the CWL standards in \ref{tab:runners}. Workflow/tool runners that claim compliance with the CWL standards are allowed significant flexibility in how and where they execute a user's CWL documents as long as they fulfill the requirements written in those documents. For example, they are allowed (and encouraged) to \todorone{6}distribute execution of a workflow across all available computers that can fulfill the resource requirements specified by the user. \todorone{5}Aspects of execution not defined by the CWL standards include (web) APIs for workflow execution and real-time monitoring.
 
 For example details about when a step should be considered ready for execution are available in §4 of CWL Workflow Description standard, v1.2\footnote{\url{https://www.commonwl.org/v1.2/Workflow.html\#Workflow}} but once all the inputs are available the exact timing is up to the workflow engine itself. The CWL standards are not meant to describe workflows that need particular steps run at or during a specific day/time-frame.
 
@@ -583,6 +574,7 @@ For example details about when a step should be considered ready for execution a
 \end{enumerate}
 }
 
+Real world usage at scale: routinely CWL users and vendors report that they analyze 5000 whole genome sequences (typically on the order of 100 Gigabytes each) in a single workflow execution; one customer of a commercial vendor reported a successful run of a workflow that contained an 8,000-wide step; the entire workflow had 25,000 container executions\footnote{\url{https://docs.google.com/document/d/1tZWwgBAromWOj6hz12J_QLMpvsJV-3vnCH8ttm_eDOE/edit#bookmark=id.gg2bb2h9n4pz}}.
 
 \addition{
 \subsection{When is CWL not useful?} \label{sec:limitations}
@@ -663,8 +655,6 @@ There are tools to generate CWL \addition{syntax} from Python \todorthree{7}(via
 
 Beyond the ratified initial and updated CWL standards released over the last six years, the CWL community has developed many \textit{tools, software libraries, connected specifications}, and has shared CWL descriptions for popular tools. For example, there are software development kits for both Python\footnote{\url{https://pypi.org/project/cwl-utils/}} and Java\footnote{\url{https://github.com/common-workflow-lab/cwljava}} that are generated automatically from the CWL schema; this allows programmers to load, modify, and save CWL documents using an object oriented model that has direct correspondence to the CWL standards themselves. CWL SDKs for other languages are possible by extending the code generation routines\footnote{See the \texttt{*codegen*.py} files in \url{https://pypi.org/project/schema-salad/7.1.20210316164414/}}. (See Sidebar B in Section~\ref{sec:sidebar:b:workwith} for practical details.)
 
-Some workflow users require the \textit{maintenance and risk-mitigation guarantees offered by commercial operations}. There are multiple commercially supported systems that support \modification{the CWL standards} for executing workflows and they are available from vendors such as Curii (Arvados)\footnote{\url{https://www.curii.com/}}, DNAnexus\footnote{\url{https://www.dnanexus.com/}}, IBM (IBM® Spectrum LSF)\footnote{\url{https://github.com/IBMSpectrumComputing/cwlexec}}, Illumina (Illumina Connected Analytics)\footnote{\url{https://www.illumina.com/}}, and Seven Bridges\footnote{\url{https://www.sevenbridges.com/}}.
-
 \modification{The CWL standards} supports well the acute \textit{need to reuse} (and, correspondingly, \textit{to share}) information on workflow execution, and on authoring and provenance. The CWLProv\footnote{\url{https://w3id.org/cwl/prov/}} prototype was created to show how existing standards~\cite{belhajjame_using_2015,kunze_bagit_2018,missier_w3c_2013} can be combined to represent the provenance of a specific execution of a CWL workflow~\cite{khan_sharing_2019}. Although, to-date, CWLProv has only been implemented in the CWL reference runner, interest is high in additional implementation and further development---similarly to what other CWL developments experienced during their first years of existence.
 
 \deletion{One criterion for evaluating a workflow language is the extent to which it supports a \textit{separation of concerns} between the workflow description authors and the software implementers of the language. This separation of concerns is realized in the CWL standards by using an explicit description approach. This has enabled several optimizations in scheduling (location-based~\cite{jiang_tr-19-01_2019}, cost-based~\cite{jiang_pivot_2019}) and data-organization by researchers and other implementers of the CWL standards.}
@@ -688,7 +678,7 @@ Specifically,
 \end{enumerate}
 }
 
-To conclude: this is a call for others to embrace workflow thinking and join the CWL community. \todorthree{8}\addition{With the CWL standards, the methods are included and ready to (re)use}!
+To conclude: this is a call for others to embrace workflow thinking and join the CWL community. \todorthree{5}\todorthree{8}\addition{With the CWL standards, the methods are included and ready to (re)use}!
 
 \begin{acks}
 The CWL project is immensely grateful to the following self-identified CWL Community members and their contributions to the project:
