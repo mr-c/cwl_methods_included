@@ -490,7 +490,7 @@ The workflow approach helps compose an entire application of these command-line 
 In practice, many research and engineering groups use workflows of the kind described in Figure~\ref{fig:sample_workflow}. However, as highlighted in a recently published ``Technology Toolbox'' article~\cite{perkel_workflow_2019} published in the journal Nature, these groups typically lack the ability to share and collaborate across institutions and infrastructures without costly manual translation of their workflows.}
 
 % CURRENT STATUS
-Using workflow techniques, especially with digital analysis processes, has become quite popular and does not look to be slowing down: one \todortwo{19}{\modification{workflow management system}} recently celebrated its 10,000th citation\footnote{\url{https://galaxyproject.org/blog/2020-08-10k-pubs/}}; and over 29\modification{8} computational \addition{data analysis} workflow systems are known\footnote{\url{https://s.apache.org/existing-workflow-systems}}. Why are workflows needed?
+Using workflow techniques, especially with digital analysis processes, has become quite popular and does not look to be slowing down: one \todortwo{19}{\modification{workflow management system}} recently celebrated its 10,000th citation\footnote{\url{https://galaxyproject.org/blog/2020-08-10k-pubs/}}; and over 29\modification{8} computational \addition{data analysis} workflow systems are known\footnote{\url{https://s.apache.org/existing-workflow-systems}}. \deletion{Why are workflows needed?}
 
 % PROBLEM
 \deletion{Workflows address two key problems.} A process, digital or otherwise, may grow to such complexity that the authors and users of that process have difficulties in understanding its structure, scaling the process, managing the running of the process, and keeping track of what happened in previous enactments of the process. Process dependencies may be undocumented, obfuscated, or otherwise effectively invisible; even an extensively documented process may be difficult to understand by outsiders or newcomers if a common framework or vocabulary is lacking. The need to run the process more frequently or with larger inputs is unlikely to be achieved  by the initial entity (i.e., either script or person) running the process. What seemed once a reasonable manual step (\textit{run this command here and then paste the result there; then call this person for permission}) will, under the pressure of porting and reusing, become a bottleneck. Informal logs (if any) will quickly become unsuitable for answering an organization's need to understand \textit{what} happened, \textit{when}, by \textit{whom}, and to \textit{which} data.
@@ -517,9 +517,8 @@ A standard for sharing and reusing workflows can provide a solution to describin
 % SOLUTION
 \addition{Sharing \textit{workflow descriptions based on standards} also addresses the second problem: the availability of the workflow description provides needed information when sharing; and the quality of the description provided by a structured, standards-based approach is much higher than the current approach of verbal descriptions in scientific reports. Moreover, the operational parts of the description can be provided automated by the workflow management system, rather than by domain experts.}
 
-%% TODO: say the below nicely
-
-%% However, we point out that many experts in workflows and workflow engines do not yet appreciate the importance of standards, in contrast to the knowledge representation field, where data standards are commonly adopted and have become expected for funded projects.
+\todortwo{14}\addition{
+While (data) standards are commonly adopted and have become expected for funded projects in knowledge representation fields, the same cannot yet be said about workflows and workflow engines yet.}
 
 \subsection{Sidebar A: Monolingual and Polylingual workflow systems} \label{sec:sidebar:a}
 
@@ -710,7 +709,7 @@ Specifically,
 \end{enumerate}
 }
 
-To conclude: this is a call for others to embrace workflow thinking and join the CWL community. \todorthree{5}\todorthree{8}\addition{With the CWL standards, the methods are included and ready to (re)use}!
+To conclude: this is a call for others to embrace workflow thinking and join the CWL community \addition{in creating and sharing portable and complete workflow descriptions.} \todorthree{5}\todorthree{8}\addition{With the CWL standards, the methods are included and ready to (re)use}!
 
 \begin{acks}
 The CWL project is immensely grateful to the following self-identified CWL Community members and their contributions to the project:
