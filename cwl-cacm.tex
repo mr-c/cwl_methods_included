@@ -24,7 +24,7 @@
 %% The first command in your LaTeX source must be the \documentclass command.
 
 %% for arxiv.org
-\documentclass[sigconf,revew,screen,timestamp,nonacm]{acmart}
+%%\documentclass[sigconf,revew,screen,timestamp,nonacm]{acmart}
 
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 
@@ -32,16 +32,16 @@
 %% \usepackage[colorinlistoftodos,prependcaption,textsize=tiny,disable]{todonotes}
 
 % to mark changes
-\usepackage{xcolor}
-\newcommand{\addition}[1]{{\color{brown} #1}}
-\newcommand{\modification}[1]{{\color{blue} #1}}
-\usepackage[normalem]{ulem}
-\newcommand{\deletion}[1]{{\color{red} \sout{#1}}}
+%%\usepackage{xcolor}
+%%\newcommand{\addition}[1]{{\color{brown} #1}}
+%%\newcommand{\modification}[1]{{\color{blue} #1}}
+%%\usepackage[normalem]{ulem}
+%%\newcommand{\deletion}[1]{{\color{red} \sout{#1}}}
 
 %% or to hide the change markings
-%% \newcommand{\addition}[1]{{#1}}
-%% \newcommand{\modification}[1]{{#1}}
-%% \newcommand{\deletion}[1]{{}}
+\newcommand{\addition}[1]{{#1}}
+\newcommand{\modification}[1]{{#1}}
+\newcommand{\deletion}[1]{{}}
 
 %
 \definecolor{OwnAzure}{HTML}{336699}
@@ -54,7 +54,7 @@
 \newcommand{\todorthree}[1]{\todo[color=OwnAzure!40]{R3.#1}}
 
 %% For submission
-%% \documentclass[sigconf,authordraft]{acmart}
+\documentclass[sigconf,authordraft]{acmart}
 
 %% NOTE that a single column version may be required for 
 %% submission and peer review. This can be done by changing
@@ -670,6 +670,7 @@ Wide adoption benefits from our principles: \modification{The CWL standards} inc
       & MS Windows (via WSL 2)\\
       \href{https://pypi.org/project/cwl-airflow}{CWL-Airflow} & Local execution on Linux, OS X\\
       & or via dedicated Airflow enabled cluster.\\
+      \addition{\href{https://streamflow.di.unito.it/}{StreamFlow}\cite{colonnelli_streamflow_2020} & Kubernetes, HPC with Singularity (PBS, Slurm), Occam, multi-node SSH, local-only (Docker, Singularity)\\}
       \href{https://docs.reana.io/}{REANA} & Kubernetes, \href{https://clouddocs.web.cern.ch/clouddocs/containers/}{CERN OpenStack},\\
       & \href{https://wiki.openstack.org/wiki/Magnum}{OpenStack Magnum}\\
       \bottomrule

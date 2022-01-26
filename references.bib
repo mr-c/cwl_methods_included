@@ -1,4 +1,18 @@
 
+@article{colonnelli_streamflow_2020,
+	title = {{StreamFlow}: cross-breeding cloud with {HPC}},
+	issn = {2168-6750},
+	shorttitle = {{StreamFlow}},
+	doi = {10.1109/TETC.2020.3019202},
+	abstract = {Workflows are among the most commonly used tools in a variety of execution environments. Many of them target a specific environment; few of them make it possible to execute an entire workflow in different environments, e.g. Kubernetes and batch clusters. We present a novel approach to workflow execution, called StreamFlow, that complements the workflow graph with the declarative description of potentially complex execution environments, and that makes it possible the execution onto multiple sites not sharing a common data space. StreamFlow is then exemplified on a novel bioinformatics pipeline for single cell transcriptomic data analysis workflow.},
+	journal = {IEEE Transactions on Emerging Topics in Computing},
+	author = {Colonnelli, Iacopo and Cantalupo, Barbara and Merelli, Ivan and Aldinucci, Marco},
+	year = {2020},
+	note = {Conference Name: IEEE Transactions on Emerging Topics in Computing},
+	keywords = {C.1.3, Cloud computing, Computer Science - Distributed, Parallel, and Cluster Computing, Computer architecture, Containers, D.1.3, D.3.2, DSL, Pipelines, Task analysis, Tools},
+	pages = {1--1},
+}
+
 @article{oliver_workflow_2019,
 	title = {Workflow {Automation} for {Cycling} {Systems}: {The} {Cylc} {Workflow} {Engine}},
 	issn = {1521-9615},
@@ -286,33 +300,6 @@ Amazon Web Services.},
 	pages = {D570--D578},
 }
 
-@article{seemann_ten_2013,
-	title = {Ten recommendations for creating usable bioinformatics command line software},
-	volume = {2},
-	issn = {2047-217X},
-	url = {https://doi.org/10.1186/2047-217X-2-15},
-	doi = {10.1186/2047-217X-2-15},
-	abstract = {Bioinformatics software varies greatly in quality. In terms of usability, the command line interface is the first experience a user will have of a tool. Unfortunately, this is often also the last time a tool will be used. Here I present ten recommendations for command line software author’s tools to follow, which I believe would greatly improve the uptake and usability of their products, waste less user’s time, and improve the quality of scientific analyses.},
-	number = {2047-217X-2-15},
-	urldate = {2021-03-02},
-	journal = {GigaScience},
-	author = {Seemann, Torsten},
-	month = dec,
-	year = {2013},
-}
-
-@inproceedings{jiang_cloud-agnostic_2020,
-	title = {A {Cloud}-{Agnostic} {Framework} to {Enable} {Cost}-{Aware} {Scheduling} of {Applications} in a {Multi}-{Cloud} {Environment}},
-	doi = {10.1109/NOMS47738.2020.9110325},
-	abstract = {We have witnessed a surge in both the big data applications being hosted by an assortment of cloud vendors, and in the astronomical amount of data they produce and consume on a daily basis. Traditional cluster computing frameworks can hardly cope with the unprecedented data volume and the geo-distributed, cross-cloud data distribution due to their limited scalability and adaptability across the heterogeneous clouds. Moreover, running data-intensive applications across clouds at will is extremely cost-inefficient and likely to incur outrageous expenses. Hence, we introduce our cloud-agnostic system PIVOT with the novel cost-aware scheduling algorithm, which enables data-intensive applications to run and scale across clouds instantly in a cost-efficient manner. We evaluate our system and scheduling algorithm extensively with the Alibaba production cluster trace, as well as real-world big data applications on a 100-node deployment across 11 regions (31 availability zones) on AWS and GCP. The experimental results show that PIVOT achieves up to 90.8\% saving in expense for VM subscription and 99.2\% for egress network traffic compared to the state-of-the-art baselines. Notably, the cost-aware scheduling also achieves over 4x speedup in data transfers for data-intensive applications.},
-	booktitle = {{NOMS} 2020 - 2020 {IEEE}/{IFIP} {Network} {Operations} and {Management} {Symposium}},
-	author = {Jiang, Fan and Ferriter, Kyle and Castillo, Claris},
-	month = apr,
-	year = {2020},
-	note = {ISSN: 2374-9709},
-	pages = {1--9},
-}
-
 @incollection{couvares_workflow_2007,
 	address = {London},
 	title = {Workflow {Management} in {Condor}},
@@ -329,6 +316,21 @@ Amazon Web Services.},
 	doi = {10.1007/978-1-84628-757-2_22},
 	keywords = {Basic Local Alignment Search Tool, Batch System, Data Placement, Grid Environment, State Diagram},
 	pages = {357--375},
+}
+
+@article{seemann_ten_2013,
+	title = {Ten recommendations for creating usable bioinformatics command line software},
+	volume = {2},
+	issn = {2047-217X},
+	url = {https://doi.org/10.1186/2047-217X-2-15},
+	doi = {10.1186/2047-217X-2-15},
+	abstract = {Bioinformatics software varies greatly in quality. In terms of usability, the command line interface is the first experience a user will have of a tool. Unfortunately, this is often also the last time a tool will be used. Here I present ten recommendations for command line software author’s tools to follow, which I believe would greatly improve the uptake and usability of their products, waste less user’s time, and improve the quality of scientific analyses.},
+	number = {2047-217X-2-15},
+	urldate = {2021-03-02},
+	journal = {GigaScience},
+	author = {Seemann, Torsten},
+	month = dec,
+	year = {2013},
 }
 
 @article{deelman_pegasus_2015,
@@ -502,6 +504,18 @@ The pilot produced very valuable results. It confirmed the general approach to u
 	year = {2010},
 	keywords = {Cloud Computing, Hadoop Distribute File System, Message Passing Interface, Open Source Software Project, Pacific Northwest National Laboratory},
 	pages = {S1},
+}
+
+@inproceedings{jiang_cloud-agnostic_2020,
+	title = {A {Cloud}-{Agnostic} {Framework} to {Enable} {Cost}-{Aware} {Scheduling} of {Applications} in a {Multi}-{Cloud} {Environment}},
+	doi = {10.1109/NOMS47738.2020.9110325},
+	abstract = {We have witnessed a surge in both the big data applications being hosted by an assortment of cloud vendors, and in the astronomical amount of data they produce and consume on a daily basis. Traditional cluster computing frameworks can hardly cope with the unprecedented data volume and the geo-distributed, cross-cloud data distribution due to their limited scalability and adaptability across the heterogeneous clouds. Moreover, running data-intensive applications across clouds at will is extremely cost-inefficient and likely to incur outrageous expenses. Hence, we introduce our cloud-agnostic system PIVOT with the novel cost-aware scheduling algorithm, which enables data-intensive applications to run and scale across clouds instantly in a cost-efficient manner. We evaluate our system and scheduling algorithm extensively with the Alibaba production cluster trace, as well as real-world big data applications on a 100-node deployment across 11 regions (31 availability zones) on AWS and GCP. The experimental results show that PIVOT achieves up to 90.8\% saving in expense for VM subscription and 99.2\% for egress network traffic compared to the state-of-the-art baselines. Notably, the cost-aware scheduling also achieves over 4x speedup in data transfers for data-intensive applications.},
+	booktitle = {{NOMS} 2020 - 2020 {IEEE}/{IFIP} {Network} {Operations} and {Management} {Symposium}},
+	author = {Jiang, Fan and Ferriter, Kyle and Castillo, Claris},
+	month = apr,
+	year = {2020},
+	note = {ISSN: 2374-9709},
+	pages = {1--9},
 }
 
 @article{berthold_knime_2009,
@@ -2495,15 +2509,6 @@ these signals.},
 	note = {00000},
 }
 
-@article{crusoe_khmer_2015,
-	title = {The khmer software package: enabling efficient nucleotide sequence analysis [version 1; referees: 2 approved, 1 approved with reservations]},
-	url = {http://doi.org/10.12688/f1000research.6924.1},
-	doi = {10.12688/f1000research.6924.1},
-	author = {Crusoe, Michael R.},
-	year = {2015},
-	note = {00006},
-}
-
 @book{amstutz_beyond_2015,
 	title = {Beyond {Galaxy}: portable workflows and tool definitions with the {CWL}},
 	url = {https://cesgo.genouest.org/resources/129},
@@ -2513,6 +2518,15 @@ these signals.},
 	note = {00000},
 }
 
+@article{crusoe_khmer_2015,
+	title = {The khmer software package: enabling efficient nucleotide sequence analysis [version 1; referees: 2 approved, 1 approved with reservations]},
+	url = {http://doi.org/10.12688/f1000research.6924.1},
+	doi = {10.12688/f1000research.6924.1},
+	author = {Crusoe, Michael R.},
+	year = {2015},
+	note = {00006},
+}
+
 @book{crusoe_common_2016,
 	title = {Common workflow language v1.0 \& how it will affect you},
 	url = {http://doi.org/10.7490/F1000RESEARCH.1112726.1},
@@ -2520,6 +2534,15 @@ these signals.},
 	year = {2016},
 	doi = {10.7490/F1000RESEARCH.1112726.1},
 	note = {00000 },
+}
+
+@book{crusoe_common_2016-1,
+	title = {Common {Workflow} {Language}, draft 3},
+	url = {http://doi.org/10.6084/M9.FIGSHARE.3115156.V1},
+	author = {Crusoe, Michael R. and Amstutz, Peter and Andeer, Robin and Chapman, Brad and Chilton, John and Crusoe, Michael R. and Guimerà, Roman Valls and Hernandez, Guillermo Carrasco and Ivkovic, Sinisa and Kartashov, Andrey and Kern, John and Leehr, Dan and Ménager, Hervé and Mikheev, Maxim and Pierce, Tim and Randall, Josh and Soiland-Reyes, Stian and Stojanovic, Luka and Tijanić, Nebojša},
+	year = {2016},
+	doi = {10.6084/M9.FIGSHARE.3115156.V1},
+	note = {00008 },
 }
 
 @article{crusoe_channeling_2016,
@@ -2532,15 +2555,6 @@ these signals.},
 	month = jul,
 	year = {2016},
 	note = {00001},
-}
-
-@book{crusoe_common_2016-1,
-	title = {Common {Workflow} {Language}, draft 3},
-	url = {http://doi.org/10.6084/M9.FIGSHARE.3115156.V1},
-	author = {Crusoe, Michael R. and Amstutz, Peter and Andeer, Robin and Chapman, Brad and Chilton, John and Crusoe, Michael R. and Guimerà, Roman Valls and Hernandez, Guillermo Carrasco and Ivkovic, Sinisa and Kartashov, Andrey and Kern, John and Leehr, Dan and Ménager, Hervé and Mikheev, Maxim and Pierce, Tim and Randall, Josh and Soiland-Reyes, Stian and Stojanovic, Luka and Tijanić, Nebojša},
-	year = {2016},
-	doi = {10.6084/M9.FIGSHARE.3115156.V1},
-	note = {00008 },
 }
 
 @book{crusoe_khmer_2017,
@@ -2585,16 +2599,6 @@ these signals.},
 	note = {00001 },
 }
 
-@article{crusoe_recommendations_2018,
-	title = {Recommendations for the packaging and containerizing of bioinformatics software [version 1; referees: awaiting peer review]},
-	issn = {2046-1402},
-	url = {http://doi.org/10.12688/f1000research.15140.1},
-	doi = {10.12688/f1000research.15140.1},
-	author = {Crusoe, Michael R. and Gruening, Bjorn and Sallou, Olivier and Moreno, Pablo and Leprevost, Felipe da Veiga and Ménager, Hervé and Søndergaard, Dan and Röst, Hannes and Sachsenberg, Timo and O'Connor, Brian and Madeira, Fábio and Angel, Victoria Dominguez Del and Crusoe, Michael R. and Varma, Susheel and Blankenberg, Daniel and Jimenez, Rafael C. and Community, BioContainers and Perez-Riverol, Yasset},
-	year = {2018},
-	note = {00000},
-}
-
 @inproceedings{crusoe_cwlprov_2018-2,
 	title = {Cwlprov - {Interoperable} {Retrospective} {Provenance} {Capture} {And} {Its} {Challenges}},
 	url = {http://doi.org/10.5281/ZENODO.1208478},
@@ -2615,6 +2619,16 @@ these signals.},
 	note = {00000},
 }
 
+@article{crusoe_recommendations_2018,
+	title = {Recommendations for the packaging and containerizing of bioinformatics software [version 1; referees: awaiting peer review]},
+	issn = {2046-1402},
+	url = {http://doi.org/10.12688/f1000research.15140.1},
+	doi = {10.12688/f1000research.15140.1},
+	author = {Crusoe, Michael R. and Gruening, Bjorn and Sallou, Olivier and Moreno, Pablo and Leprevost, Felipe da Veiga and Ménager, Hervé and Søndergaard, Dan and Röst, Hannes and Sachsenberg, Timo and O'Connor, Brian and Madeira, Fábio and Angel, Victoria Dominguez Del and Crusoe, Michael R. and Varma, Susheel and Blankenberg, Daniel and Jimenez, Rafael C. and Community, BioContainers and Perez-Riverol, Yasset},
+	year = {2018},
+	note = {00000},
+}
+
 @book{crusoe_cwlprov:_2018,
 	title = {Cwlprov: {Interoperable} {Retrospective} {Provenance} {Capture} {And} {Computational} {Analysis} {Sharing}},
 	url = {http://doi.org/10.5281/zenodo.1473157},
@@ -2624,7 +2638,16 @@ these signals.},
 	note = {00000 },
 }
 
-@inproceedings{crusoe_capturing_2018,
+@book{crusoe_capturing_2018,
+	title = {Capturing {Interoperable} {Reproducible} {Workflows} {With} {Common} {Workflow} {Language}},
+	url = {http://doi.org/10.5281/zenodo.1484496},
+	author = {Crusoe, Michael R. and Soiland-Reyes, Stian and Khan, Farah Zaib and Sinnott, Richard O. and Lonie, Andrew and Crusoe, Michael R. and Goble, Carole},
+	year = {2018},
+	doi = {10.5281/zenodo.1484496},
+	note = {00000 },
+}
+
+@inproceedings{crusoe_capturing_2018-1,
 	title = {Capturing {Interoperable} {Reproducible} {Workflows} {With} {Common} {Workflow} {Language}},
 	url = {http://doi.org/10.5281/ZENODO.1312622},
 	doi = {10.5281/ZENODO.1312622},
@@ -2634,7 +2657,7 @@ these signals.},
 	note = {00000},
 }
 
-@inproceedings{crusoe_capturing_2018-1,
+@inproceedings{crusoe_capturing_2018-2,
 	title = {Capturing {Interoperable} {Reproducible} {Workflows} {With} {Common} {Workflow} {Language}},
 	url = {http://doi.org/10.5281/ZENODO.1312623},
 	doi = {10.5281/ZENODO.1312623},
@@ -2644,12 +2667,12 @@ these signals.},
 	note = {00000},
 }
 
-@book{crusoe_capturing_2018-2,
+@book{crusoe_capturing_2018,
 	title = {Capturing {Interoperable} {Reproducible} {Workflows} {With} {Common} {Workflow} {Language}},
-	url = {http://doi.org/10.5281/zenodo.1484496},
+	url = {http://doi.org/10.5281/zenodo.1484495},
 	author = {Crusoe, Michael R. and Soiland-Reyes, Stian and Khan, Farah Zaib and Sinnott, Richard O. and Lonie, Andrew and Crusoe, Michael R. and Goble, Carole},
 	year = {2018},
-	doi = {10.5281/zenodo.1484496},
+	doi = {10.5281/zenodo.1484495},
 	note = {00000 },
 }
 
@@ -2659,15 +2682,6 @@ these signals.},
 	author = {Crusoe, Michael R. and Khan, Farah Zaib and Soiland-Reyes, Stian and Sinnott, Richard O. and Lonie, Andrew and Goble, Carole and Crusoe, Michael R.},
 	year = {2018},
 	doi = {10.5281/zenodo.1966881},
-	note = {00000 },
-}
-
-@book{crusoe_capturing_2018,
-	title = {Capturing {Interoperable} {Reproducible} {Workflows} {With} {Common} {Workflow} {Language}},
-	url = {http://doi.org/10.5281/zenodo.1484495},
-	author = {Crusoe, Michael R. and Soiland-Reyes, Stian and Khan, Farah Zaib and Sinnott, Richard O. and Lonie, Andrew and Crusoe, Michael R. and Goble, Carole},
-	year = {2018},
-	doi = {10.5281/zenodo.1484495},
 	note = {00000 },
 }
 
