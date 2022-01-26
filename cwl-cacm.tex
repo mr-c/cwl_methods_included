@@ -24,12 +24,15 @@
 %% The first command in your LaTeX source must be the \documentclass command.
 
 %% for arxiv.org
-%%\documentclass[sigconf,revew,screen,timestamp,nonacm]{acmart}
+\documentclass[sigconf,screen,nonacm]{acmart}
 
-\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+%% For submission
+%%\documentclass[sigconf,authordraft]{acmart}
+
+%%\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 
 %% or to turn off the notes by adding "disable"
-%% \usepackage[colorinlistoftodos,prependcaption,textsize=tiny,disable]{todonotes}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny,disable]{todonotes}
 
 % to mark changes
 %%\usepackage{xcolor}
@@ -53,8 +56,6 @@
 \newcommand{\todortwo}[1]{\todo[linecolor=white,color=KamPurple!40]{R2.#1}}
 \newcommand{\todorthree}[1]{\todo[color=OwnAzure!40]{R3.#1}}
 
-%% For submission
-\documentclass[sigconf,authordraft]{acmart}
 
 %% NOTE that a single column version may be required for 
 %% submission and peer review. This can be done by changing
@@ -670,7 +671,9 @@ Wide adoption benefits from our principles: \modification{The CWL standards} inc
       & MS Windows (via WSL 2)\\
       \href{https://pypi.org/project/cwl-airflow}{CWL-Airflow} & Local execution on Linux, OS X\\
       & or via dedicated Airflow enabled cluster.\\
-      \addition{\href{https://streamflow.di.unito.it/}{StreamFlow}\cite{colonnelli_streamflow_2020} & Kubernetes, HPC with Singularity (PBS, Slurm), Occam, multi-node SSH, local-only (Docker, Singularity)\\}
+      \href{https://streamflow.di.unito.it/}{StreamFlow}\cite{colonnelli_streamflow_2020} & Kubernetes, HPC with Singularity (PBS, Slurm), \\
+      & Occam, multi-node SSH, local-only (Docker, \\
+      & Singularity)\\
       \href{https://docs.reana.io/}{REANA} & Kubernetes, \href{https://clouddocs.web.cern.ch/clouddocs/containers/}{CERN OpenStack},\\
       & \href{https://wiki.openstack.org/wiki/Magnum}{OpenStack Magnum}\\
       \bottomrule
